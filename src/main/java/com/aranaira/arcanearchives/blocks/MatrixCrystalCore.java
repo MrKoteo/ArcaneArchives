@@ -2,7 +2,7 @@ package com.aranaira.arcanearchives.blocks;
 
 import com.aranaira.arcanearchives.blocks.templates.BlockDirectionalTemplate;
 import com.aranaira.arcanearchives.tileentities.MatrixCoreTileEntity;
-import mcp.MethodsReturnNonnullByDefault;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.resources.I18n;
@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Random;
 
 @ParametersAreNonnullByDefault
-@MethodsReturnNonnullByDefault
+
 public class MatrixCrystalCore extends BlockDirectionalTemplate {
 	public static final String name = "matrix_crystal_core";
 

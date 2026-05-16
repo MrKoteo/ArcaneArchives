@@ -2,8 +2,8 @@ package com.aranaira.arcanearchives.integration.guidebook;
 
 import com.aranaira.arcanearchives.ArcaneArchives;
 import com.aranaira.arcanearchives.items.TomeOfArcanaItemBackground;
-import gigaherz.lirelent.guidebook.guidebook.client.BookRendering;
-import gigaherz.lirelent.guidebook.guidebook.recipe.RecipeProvider;
+import gigaherz.guidebook.guidebook.client.BookRendering;
+import gigaherz.guidebook.guidebook.recipe.RecipeProvider;
 import net.minecraft.util.ResourceLocation;
 
 public class GBookInit {

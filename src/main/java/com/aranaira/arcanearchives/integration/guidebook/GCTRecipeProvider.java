@@ -4,11 +4,11 @@ import com.aranaira.arcanearchives.ArcaneArchives;
 import com.aranaira.arcanearchives.api.IGCTRecipe;
 import com.aranaira.arcanearchives.recipe.IngredientStack;
 import com.aranaira.arcanearchives.recipe.gct.GCTRecipeList;
-import gigaherz.lirelent.guidebook.guidebook.drawing.VisualElement;
-import gigaherz.lirelent.guidebook.guidebook.elements.ElementImage;
-import gigaherz.lirelent.guidebook.guidebook.elements.ElementStack;
-import gigaherz.lirelent.guidebook.guidebook.recipe.RecipeProvider;
-import gigaherz.lirelent.guidebook.guidebook.util.Size;
+import gigaherz.guidebook.guidebook.drawing.VisualElement;
+import gigaherz.guidebook.guidebook.elements.ElementImage;
+import gigaherz.guidebook.guidebook.elements.ElementStack;
+import gigaherz.guidebook.guidebook.recipe.RecipeProvider;
+import gigaherz.guidebook.guidebook.util.Size;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 

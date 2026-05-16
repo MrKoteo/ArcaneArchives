@@ -1,258 +1,256 @@
-buildscript {
-    repositories {
-        jcenter()
-        maven { url = "http://files.minecraftforge.net/maven" }
-        maven {
-            name = 'sponge'
-            url = 'https://repo.spongepowered.org/maven'
-        }
-        maven {
-          url "https://plugins.gradle.org/m2/"
-        }
-    }
-    dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
-        classpath 'org.spongepowered:mixingradle:0.6-SNAPSHOT'
-        classpath "com.wynprice.cursemaven:CurseMaven:1.1.0"
-    }
-}
-apply plugin: 'net.minecraftforge.gradle.forge'
-apply plugin: 'org.spongepowered.mixin'
-apply plugin: 'com.wynprice.cursemaven'
-//Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-
-version = "0.2.1-preview1"
-group = "com.aranairra.arcanearchives"
-archivesBaseName = "arcanearchives"
-
-sourceCompatibility = targetCompatibility = '1.8'
-compileJava {
-    sourceCompatibility = targetCompatibility = '1.8'
-    options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'maven-publish'
+    id 'com.gradleup.shadow' version '9.4.0'
+    id 'org.jetbrains.gradle.plugin.idea-ext' version '1.4.1'
+    id 'xyz.wagyourtail.unimined' version '1.4.18-kappa'
+    id 'net.kyori.blossom' version '2.2.0'
 }
 
-minecraft {
-    version = "${minecraft_version}-${forge_version}"
-    mappings = "${forge_mappings}"
-    if (file('../run').exists()) {
-        runDir = "../run"
-    } else {
-        runDir = "run"
-    }
+import org.jetbrains.gradle.ext.Gradle
 
-    useDepAts = true
-    coreMod = "com.aranaira.arcanearchives.core.AALoadingPlugin"
+apply from: 'gradle/scripts/helpers.gradle'
 
-    replace "GRADLE:VERSION", project.version
+// Early Assertions
+assertProperty 'mod_version'
+assertProperty 'root_package'
+assertProperty 'mod_id'
+assertProperty 'mod_name'
+
+assertSubProperties 'use_access_transformer', 'access_transformer_locations'
+assertSubProperties 'is_coremod', 'coremod_includes_mod', 'coremod_plugin_class_name'
+assertSubProperties 'use_asset_mover', 'asset_mover_version'
+
+setDefaultProperty 'generate_sources_jar', true, false
+setDefaultProperty 'generate_javadocs_jar', true, false
+setDefaultProperty 'minecraft_username', true, 'Developer'
+setDefaultProperty 'extra_jvm_args', false, ''
+
+version = propertyString('mod_version')
+group = propertyString('root_package')
+
+base {
+    archivesName = mod_name
 }
 
-configurations {
-    shade
-    compile.extendsFrom shade
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(25)
+    }
+    if (propertyBool('generate_sources_jar')) {
+        withSourcesJar()
+    }
+    if (propertyBool('generate_javadocs_jar')) {
+        withJavadocJar()
+    }
 }
 
 configurations {
-    embed
-    embed.transitive = false
+    contain
+    implementation.extendsFrom(contain)
+    modCompileOnly
+    compileOnly.extendsFrom(modCompileOnly)
+    modRuntimeOnly
+    runtimeOnly.extendsFrom(modRuntimeOnly)
 }
 
-repositories {
-    maven {
-        name = "JEI"
-        url = "http://dvs1.progwml6.com/files/maven"
+String remapTaskName = propertyBool('enable_shadow') ? "remapShadowJar" : "remapJar"
+
+unimined.minecraft {
+    version "1.12.2"
+
+    mappings {
+        mcp("stable", "39-1.12")
     }
-    maven {
-        name = "HWYLA"
-        url = "http://tehnut.info/maven"
+
+    cleanroom {
+        if (propertyBool('use_access_transformer')) {
+            accessTransformer "${rootProject.projectDir}/src/main/resources/${propertyString('access_transformer_locations')}"
+        }
+        loader "0.5.12-alpha"
+        runs.all {
+            args += ['--username', minecraft_username]
+            maxHeapSize = '4g'
+            jvmArgs += '-Xmx4g'
+            systemProperty("crl.dev.mixin", "mixins.${mod_id}.json")
+            def extraArgs = propertyString('extra_jvm_args')
+            if (extraArgs != null && !extraArgs.trim().isEmpty()) {
+                jvmArgs += extraArgs.split { "\\s+" }.toList()
+            }
+            if (propertyBool('enable_foundation_debug')) {
+                systemProperty("foundation.dump", "true")
+                systemProperty("foundation.verbose", "true")
+            }
+            if (propertyBool('is_coremod')) {
+                systemProperty("fml.coreMods.load", propertyString('coremod_plugin_class_name'))
+            }
+            return
+        }
     }
-    maven { // The One Probe
-        name 'tterrag maven'
-        url "https://maven.tterrag.com/"
+
+    defaultRemapJar = false
+    
+    String jarTaskName = propertyBool('enable_shadow') ? "shadowJar" : "jar"
+    
+    remap(tasks.named(jarTaskName).get()) {
+        mixinRemap {
+            enableBaseMixin()
+            enableMixinExtra()
+        }
     }
-    maven { // Quark and autorreglib
-        name = "BlameJared"
-        url = "https://maven.blamejared.com"
-    }
-    maven {
-        name = "CurseForge"
-        url = "https://minecraft.curseforge.com/api/maven/"
-    }
-    maven {  // guidebook common dep
-        name = "guidebook"
-        url = "http://dogforce-games.com/maven"
-    }
-    maven { // guidebook transitive deps and baubles
-        name = "mcmoddev"
-        url = "https://maven.mcmoddev.com"
-    }
-    flatDir {
-        name = "local jars"
-        dirs 'embed'
-    }
-    flatDir {
-        name = "thaumcraft jars"
-        dirs 'thaumcraft'
-    }
-    maven {
-        name = "HellfirePVP"
-        url = "https://maven.hellfiredev.net"
-    }
-    maven {
-        name = "sponge"
-        url = "http://repo.spongepowered.org/maven/"
-    }
-    maven {
-        url = "http://maven.tterrag.com"
+
+    mods {
+        remap(configurations.modCompileOnly)
+        remap(configurations.modRuntimeOnly)
     }
 }
 
 dependencies {
-    deobfProvided "mezz.jei:jei_${minecraft_version}:${jei_version}:api"
-    // at runtime, use the full JEI jar
-    runtime "mezz.jei:jei_${minecraft_version}:${jei_version}"
-    compileOnly "mcp.mobius.waila:Hwyla:${project.hwyla_version}"
-    compileOnly "mcjty.theoneprobe:TheOneProbe-${top_version}"
-    compileOnly "vazkii.quark:Quark:${quark_version}:api"
-    deobfCompile "com.azanor:Baubles:${version_baubles}"
-    compileOnly "hellfirepvp.astralsorcery:astralsorcery:1.12.2-1.10.17-v124"
-    compileOnly 'mouse-tweaks:MouseTweaks:2.10:mc1.12.2'
-    compileOnly 'inventory-tweaks:InventoryTweaks:1.64+dev.146'
-    compileOnly "vazkii.patchouli:Patchouli:${patchouli_version}"
-
-    // guidebook dependencies
-    deobfCompile "gigaherz.commons:gigaherz.commons-1.12.1:0.6.4"
-    shade ("gigaherz.commons:gigaherz.commons-1.12.1:0.6.4") {
-        transitive = false
+    if (propertyBool('use_asset_mover')) {
+        implementation "com.cleanroommc:assetmover:${propertyString('asset_mover_version')}"
     }
-
-    deobfCompile("CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-${ct_version}") {
-        exclude group: 'mezz.jei'
-    }
-    //deobfCompile "epicsquid.mysticallib:mysticallib:1.12.2-1.3.1-11"
-
-    // modified guidebook, note "lirelent" package
-    deobfCompile "gigaherz.lirelent.guidebook:Guidebook-1.12.2:2.9.1.s5"
-    embed "gigaherz.lirelent.guidebook:Guidebook-1.12.2:2.9.1.s5"
-
-    compileOnly 'thaumcraft:Thaumcraft:1.12.2:6.1.BETA26'
-    compileOnly curse.resolve("electroblobs-wizardry", "2656626")
-    compileOnly curse.resolve("potion-core", "2736248")
-
-    shade("org.spongepowered:mixin:0.7.11-SNAPSHOT") {
-        transitive = false
+    if (propertyBool('enable_junit_testing')) {
+        testImplementation 'org.junit.jupiter:junit-jupiter:6.0.3'
+        testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     }
 }
+
+apply from: 'gradle/scripts/dependencies.gradle'
 
 processResources {
-    // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
-
-    // replace stuff in mcmod.info, nothing else
-    from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod.info'
-
-        // replace version and mcversion
-        expand 'version': project.version, 'mcversion': project.minecraft.version
-    }
-
-    // copy everything else except the mcmod.info
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
-    }
-}
-
-jar {
-    into('/META-INF/libraries') {
-        from configurations.embed
-    }
-
-    manifest {
-        attributes([
-                "FMLCorePluginContainsFMLMod": "true",
-                "FMLCorePlugin"              : "com.aranaira.arcanearchives.core.AALoadingPlugin",
-
-                "MixinConfigs"               : "mixins.arcanearchives.json",
-                "TweakClass"                 : "org.spongepowered.asm.launch.MixinTweaker",
-                "ForceLoadAsMod"             : "true",
-
-                "FMLAT"                      : "aa_at.cfg",
-
-                "ContainedDeps"              : configurations.embed.collect { it.getName() }.join(' ')
-        ])
-    }
-
-    configurations.shade.each { dep ->
-        from(project.zipTree(dep)) {
-            rename 'LICENSE.txt', 'org/spongepowered/LICENSE.txt'
-
-            exclude 'META-INF/*.SF'
-            exclude 'META-INF/*.RSA'
-            exclude 'META-INF/*.MF'
-
-            exclude '**/*.html'
-        }
-    }
-
     rename '(.+_at.cfg)', 'META-INF/$1'
 }
 
-task deobfJar(type: Jar) {
-    from(sourceSets.main.output)
-    archiveName = "${baseName}-${version}-deobf.${extension}"
+sourceSets {
+    main {
+        blossom {
+            javaSources {
+                property('mod_id', propertyString('mod_id'))
+                property('mod_name', propertyString('mod_name'))
+                property('mod_version', propertyString('mod_version'))
+                property('package', "${root_package}.${mod_id}")
+            }
+            resources {
+                property('mod_id', propertyString('mod_id'))
+                property('mod_name', propertyString('mod_name'))
+                property('mod_version', propertyString('mod_version'))
+                property('mod_description', propertyString('mod_description'))
+                property('mod_authors', propertyStringList('mod_authors', ',').collect {it.strip()}.join('", "'))
+                property('mod_credits', propertyString('mod_credits'))
+                property('mod_url', propertyString('mod_url'))
+                property('mod_update_json', propertyString('mod_update_json'))
+                property('mod_logo_path', propertyString('mod_logo_path'))
+            }
+        }
+    }
 }
 
-task apiJar(type: Jar) {
-    from (sourceSets.main.allJava)
-    from (sourceSets.main.output)
-    include 'com/aranaira/arcanearchives/api/**'
-
-    classifier = 'api'
-
-    archiveName = "${baseName}-${version}-api.${extension}"
+idea {
+    module {
+        inheritOutputDirs = true
+    }
+    project {
+        settings {
+            runConfigurations {
+                '1. Build'(Gradle) {
+                    taskNames = ["build"]
+                }
+                '2. Run Client'(Gradle) {
+                    taskNames = ["runClient"]
+                }
+                '3. Run Server'(Gradle) {
+                    taskNames = ["runServer"]
+                }
+            }
+            compiler.javac {
+                afterEvaluate {
+                    javacAdditionalOptions = '-encoding utf8'
+                    moduleJavacAdditionalOptions = [
+                            (project.name + '.main'): tasks.compileJava.options.compilerArgs.collect { '"' + it + '"' }.join(' ')
+                    ]
+                }
+            }
+        }
+    }
 }
 
-task srcJar(type: Jar) {
-    from (sourceSets.main.output)
-
-    classifier = 'sources'
-
-    archiveName = "${baseName}-${version}-sources.${extension}"
+if (!propertyBool('enable_shadow')) {
+    shadowJar.enabled = false
 }
 
-artifacts {
-    archives srcJar, apiJar, deobfJar
+compileJava {
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
 }
 
-mixin {
-    add sourceSets.main, "mixins.arcanearchives.refmap.json"
+jar {
+    archiveClassifier = 'dev'
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    if (configurations.contain.size() > 0) {
+        into('/') {
+            from configurations.contain
+        }
+    }
+    doFirst {
+        manifest {
+            def attribute_map = [:]
+            attribute_map['ModType'] = "CRL"
+            attribute_map['MixinConfigs'] = "mixins.${mod_id}.json"
+            if (configurations.contain.size() > 0) {
+                attribute_map['ContainedDeps'] = configurations.contain.collect { it.name }.join(' ')
+                attribute_map['NonModDeps'] = true
+            }
+            if (propertyBool('is_coremod')) {
+                attribute_map['FMLCorePlugin'] = propertyString('coremod_plugin_class_name')
+                if (propertyBool('coremod_includes_mod')) {
+                    attribute_map['FMLCorePluginContainsFMLMod'] = true
+                }
+            }
+            if (propertyBool('use_access_transformer')) {
+                attribute_map['FMLAT'] = propertyString('access_transformer_locations')
+            }
+            attributes(attribute_map)
+        }
+    }
+    finalizedBy(tasks.named(remapTaskName).get())
 }
 
-String getCN() {
-    def firsts = ['Donald', 'Lex', 'Mike', 'Arthur', 'Bridget', 'Dorian', 'Ford', 'Guy', 'James', 'Jessica', 'John', 'Michael', 'Robinson', 'Zaphod', 'Bell', 'Penelope']
-    def lasts = ['Duck', 'Luthor', 'Meyers', 'Dent', 'Jones', 'Gray', 'Prefect', 'Montag', 'Moriarty', 'Rabbit', 'Watson', 'Smith', 'Corleone', 'Crusoe', 'Beeblebrox', 'Cranel', 'Akk']
-    def rand = new Random()
-    return firsts[rand.nextInt(firsts.size())] + ' ' + lasts[rand.nextInt(lasts.size())]
+
+shadowJar {
+    configurations = [project.configurations.shadow]
+    archiveClassifier = "shadow"
 }
 
-task mkKeyStore(type:Exec) {
-   workingDir projectDir
-   commandLine 'keytool', '-genkey', '-alias', 'signFiles', '-keystore', 'kstore.jks', '-storepass', '123456', '-noprompt', '-dname', 'CN='+getCN(), '-keypass', '123456'
+
+tasks.named(remapTaskName).configure {
+    doFirst {
+        logging.captureStandardOutput LogLevel.INFO
+    }
+    doLast {
+        logging.captureStandardOutput LogLevel.QUIET
+    }
 }
 
-task signJar(type: SignJar, dependsOn: reobfJar) {
-    inputFile = jar.archivePath
-    outputFile = jar.archivePath
-    keyStore = 'kstore.jks'
-    alias = 'signFiles'
-    storePass = '123456'
-    keyPass = '123456'
+compileTestJava {
+    sourceCompatibility = targetCompatibility = JavaVersion.VERSION_21
 }
 
-task rmKeyStore(type: Delete) {
-  delete 'kstore.jks'
+test {
+    useJUnitPlatform()
+    javaLauncher.set(javaToolchains.launcherFor {
+        languageVersion = JavaLanguageVersion.of(25)
+    })
+    if (propertyBool('show_testing_output')) {
+        testLogging {
+            showStandardStreams = true
+        }
+    }
 }
 
-build.dependsOn rmKeyStore
-rmKeyStore.dependsOn signJar
-signJar.dependsOn mkKeyStore
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+apply from: 'gradle/scripts/publishing.gradle'
+apply from: 'gradle/scripts/extra.gradle'

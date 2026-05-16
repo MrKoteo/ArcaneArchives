@@ -5,7 +5,7 @@ import com.aranaira.arcanearchives.config.ServerSideConfig;
 import com.aranaira.arcanearchives.tileentities.RadiantResonatorTileEntity;
 import com.aranaira.arcanearchives.tileentities.RadiantResonatorTileEntity.TickResult;
 import com.aranaira.arcanearchives.util.WorldUtil;
-import mcp.MethodsReturnNonnullByDefault;
+
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.resources.I18n;
@@ -24,7 +24,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 import java.util.Random;
 
-@MethodsReturnNonnullByDefault
+
 @ParametersAreNonnullByDefault
 public class RadiantResonator extends BlockTemplate {
 	public static final String name = "radiant_resonator";

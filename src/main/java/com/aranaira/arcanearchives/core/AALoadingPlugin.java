@@ -19,14 +19,11 @@ public class AALoadingPlugin implements IFMLLoadingPlugin {
 	public static Logger log = LogManager.getLogger("Arcane Archives Core");
 
 	public AALoadingPlugin () {
-		log.info("Attempting to bootstrap Mixins and plugins.");
-		MixinBootstrap.init();
-		Mixins.addConfiguration("mixins.arcanearchives.json");
 	}
 
 	@Override
 	public String[] getASMTransformerClass () {
-		return new String[0];
+		return null;
 	}
 
 	@Override

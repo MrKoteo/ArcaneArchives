@@ -36,7 +36,7 @@ import com.aranaira.arcanearchives.types.iterators.SlotIterable;
 import com.aranaira.arcanearchives.util.ItemUtils;
 import com.aranaira.arcanearchives.util.WorldUtil;
 import epicsquid.mysticallib.util.Util;
-import gigaherz.lirelent.guidebook.client.BookRegistryEvent;
+import gigaherz.guidebook.client.BookRegistryEvent;
 import it.unimi.dsi.fastutil.objects.Object2LongOpenHashMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBookshelf;
@@ -343,12 +343,12 @@ public class EventHandler {
 		}
 	}
 
-	@Optional.Method(modid = "gbook_snapshot")
+	@Optional.Method(modid = "gbook")
 	@SubscribeEvent
 	@SideOnly(Side.CLIENT)
 	@SuppressWarnings("unused")
 	public static void registerBook (BookRegistryEvent event) {
-		event.register(TomeOfArcanaItem.TOME_OF_ARCANA, true);
+		event.register(TomeOfArcanaItem.TOME_OF_ARCANA);
 	}
 
 	@SubscribeEvent

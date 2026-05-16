@@ -2,7 +2,6 @@ package com.aranaira.arcanearchives.blocks.templates;
 
 import com.aranaira.arcanearchives.tileentities.AATileEntity;
 import com.aranaira.arcanearchives.util.WorldUtil;
-import javafx.beans.property.Property;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.PropertyEnum;

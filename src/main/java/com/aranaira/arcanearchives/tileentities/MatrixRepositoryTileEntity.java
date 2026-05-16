@@ -1,6 +1,6 @@
 package com.aranaira.arcanearchives.tileentities;
 
-import mcp.MethodsReturnNonnullByDefault;
+
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.math.BlockPos;
@@ -9,7 +9,7 @@ import net.minecraft.world.World;
 import javax.annotation.ParametersAreNonnullByDefault;
 
 @ParametersAreNonnullByDefault
-@MethodsReturnNonnullByDefault
+
 public class MatrixRepositoryTileEntity extends ImmanenceTileEntity {
 
 

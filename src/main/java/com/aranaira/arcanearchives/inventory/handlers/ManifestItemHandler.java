@@ -4,14 +4,12 @@ import com.aranaira.arcanearchives.types.lists.ManifestList;
 import com.aranaira.arcanearchives.types.lists.ManifestList.SortingDirection;
 import com.aranaira.arcanearchives.types.lists.ManifestList.SortingType;
 import com.aranaira.arcanearchives.util.ManifestUtils.CollatedEntry;
-import mcp.MethodsReturnNonnullByDefault;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.items.IItemHandlerModifiable;
 
 import javax.annotation.Nullable;
 import javax.annotation.ParametersAreNonnullByDefault;
 
-@MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
 public class ManifestItemHandler implements IItemHandlerModifiable {
 	private ManifestList manifestBase;

@@ -24,7 +24,7 @@ public class MappingHandler {
 				}
 				item = lookupItem(entry.key);
 			} else if (entry.key.getNamespace().equals("gbook") && entry.key.getPath().equals("guidebook")) {
-				item = Item.REGISTRY.getObject(new ResourceLocation("gbook_snapshot:guidebook"));
+				item = Item.REGISTRY.getObject(new ResourceLocation("gbook:guidebook"));
 			}
 			if (item != null) {
 				entry.remap(item);

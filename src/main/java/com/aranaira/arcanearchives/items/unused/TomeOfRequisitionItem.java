@@ -1,7 +1,7 @@
 package com.aranaira.arcanearchives.items.unused;
 
 import com.aranaira.arcanearchives.items.templates.ItemTemplate;
-import mcp.MethodsReturnNonnullByDefault;
+
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
@@ -20,7 +20,7 @@ import javax.annotation.ParametersAreNonnullByDefault;
 import java.util.List;
 
 @ParametersAreNonnullByDefault
-@MethodsReturnNonnullByDefault
+
 public class TomeOfRequisitionItem extends ItemTemplate {
 
 	public static final String NAME = "item_tomeofrequisition";

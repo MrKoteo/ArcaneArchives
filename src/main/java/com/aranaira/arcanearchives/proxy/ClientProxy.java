@@ -121,7 +121,7 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void loadComplete (FMLLoadCompleteEvent event) {
 		super.loadComplete(event);
-		if (Loader.isModLoaded("gbook_snapshot")) {
+		if (Loader.isModLoaded("gbook")) {
 			GBookInit.init();
 		}
 		TintUtils.init();

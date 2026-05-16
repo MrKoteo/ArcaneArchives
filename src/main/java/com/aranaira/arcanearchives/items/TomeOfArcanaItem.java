@@ -2,7 +2,7 @@ package com.aranaira.arcanearchives.items;
 
 import com.aranaira.arcanearchives.ArcaneArchives;
 import com.aranaira.arcanearchives.blocks.IHasModel;
-import gigaherz.lirelent.guidebook.guidebook.ItemGuidebook;
+import gigaherz.guidebook.guidebook.ItemGuidebook;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;

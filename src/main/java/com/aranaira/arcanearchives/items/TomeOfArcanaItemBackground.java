@@ -1,14 +1,15 @@
 package com.aranaira.arcanearchives.items;
 
-import gigaherz.lirelent.guidebook.guidebook.client.GuiGuidebook;
-import gigaherz.lirelent.guidebook.guidebook.client.background.IBookBackground;
-import gigaherz.lirelent.guidebook.guidebook.client.background.IBookBackgroundFactory;
-import gigaherz.lirelent.guidebook.guidebook.elements.ElementImage;
+import com.aranaira.arcanearchives.ArcaneArchives;
+import gigaherz.guidebook.guidebook.client.GuiGuidebook;
+import gigaherz.guidebook.guidebook.client.IAnimatedBookBackground;
+import gigaherz.guidebook.guidebook.client.IAnimatedBookBackgroundFactory;
+import gigaherz.guidebook.guidebook.elements.ElementImage;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.util.ResourceLocation;
 
-public class TomeOfArcanaItemBackground implements IBookBackground {
+public class TomeOfArcanaItemBackground implements IAnimatedBookBackground {
 	private final GuiGuidebook gui;
 
 	private final ResourceLocation imageLocation;
@@ -33,11 +34,7 @@ public class TomeOfArcanaItemBackground implements IBookBackground {
 		this.imageFileHeight = (image.h > 0 ? image.h : image.th);
 		this.scale = image.scale;
 	}
-
-	@Override
-	public Layout getLayout () {
-		return Layout.ONE_PAGE;
-	}
+    
 
 	@Override
 	public void draw (float partialTicks, int bookHeight, float scalingFactor) {
@@ -92,46 +89,12 @@ public class TomeOfArcanaItemBackground implements IBookBackground {
 
 		return false;
 	}
+    
 
-	@Override
-	public int getWidth () {
-		return (int) (imageWidth * scale);
-	}
-
-	@Override
-	public int getHeight () {
-		return (int) (imageHeight * scale);
-	}
-
-	@Override
-	public int getInnerMargin () {
-		return 35;
-	}
-
-	@Override
-	public int getOuterMargin () {
-		return 5;
-	}
-
-	@Override
-	public int getTopMargin () {
-		return 5;
-	}
-
-	@Override
-	public int getBottomMargin () {
-		return 13;
-	}
-
-	@Override
-	public int getBookScaleMargin () {
-		return 10;
-	}
-
-	public static IBookBackgroundFactory TomeOfArcanaItemBackgroundFactory = (gui, backgroundLocation) -> {
+	public static IAnimatedBookBackgroundFactory TomeOfArcanaItemBackgroundFactory = (gui) -> {
 		ElementImage elementImage = new ElementImage(false, false);
 
-		elementImage.textureLocation = backgroundLocation;
+		elementImage.textureLocation = new ResourceLocation(ArcaneArchives.MODID, "textures/gui/arcana_documentation.png");
 		elementImage.tx = 0;
 		elementImage.ty = 0;
 		elementImage.tw = 243;
