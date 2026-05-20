@@ -8,8 +8,6 @@ import com.aranaira.arcanearchives.data.DataHelper;
 import com.aranaira.arcanearchives.entity.EntityWeight;
 import com.aranaira.arcanearchives.init.BlockRegistry;
 import com.aranaira.arcanearchives.init.ItemRegistry;
-import com.aranaira.arcanearchives.integration.guidebook.GBookInit;
-import com.aranaira.arcanearchives.items.EchoItem;
 import com.aranaira.arcanearchives.items.itemblocks.RadiantTankItem;
 import com.aranaira.arcanearchives.tileentities.BrazierTileEntity;
 import com.aranaira.arcanearchives.tileentities.RadiantChestTileEntity;
@@ -28,7 +26,6 @@ import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLLoadCompleteEvent;
@@ -94,7 +91,7 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void init (FMLInitializationEvent event) {
 		super.init(event);
-
+        /*
 		ItemColors colours = Minecraft.getMinecraft().getItemColors();
 
 		colours.registerItemColorHandler((stack, tintIndex) -> {
@@ -115,15 +112,12 @@ public class ClientProxy extends CommonProxy {
 			}
 
 			return TintUtils.getColor(contained);
-		}, ItemRegistry.ECHO);
+		}, ItemRegistry.ECHO);*/
 	}
 
 	@Override
 	public void loadComplete (FMLLoadCompleteEvent event) {
 		super.loadComplete(event);
-		if (Loader.isModLoaded("gbook")) {
-			GBookInit.init();
-		}
 		TintUtils.init();
 	}
 

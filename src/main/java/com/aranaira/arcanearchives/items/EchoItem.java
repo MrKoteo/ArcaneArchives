@@ -1,6 +1,5 @@
 package com.aranaira.arcanearchives.items;
 
-import com.aranaira.arcanearchives.init.ItemRegistry;
 import com.aranaira.arcanearchives.items.templates.ItemTemplate;
 import com.aranaira.arcanearchives.util.ItemUtils;
 import net.minecraft.client.resources.I18n;
@@ -34,13 +33,7 @@ public class EchoItem extends ItemTemplate {
 
 	// Does not destroy or modify the source item
 	public static ItemStack echoFromItem (ItemStack source) {
-		ItemStack copy = source.copy();
-		copy.setCount(1);
-
-		ItemStack echo = new ItemStack(ItemRegistry.ECHO);
-		NBTTagCompound tag = ItemUtils.getOrCreateTagCompound(echo);
-		tag.setTag("source", copy.serializeNBT());
-		return echo;
+		return ItemStack.EMPTY;
 	}
 
 	// Does not destroy the echo, that is presumed to be done

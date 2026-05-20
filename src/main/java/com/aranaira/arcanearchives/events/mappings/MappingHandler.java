@@ -84,8 +84,6 @@ public class MappingHandler {
 				return ItemRegistry.SCEPTER_REVELATION;
 			case "item_cutquartz":
 				return ItemRegistry.SHAPED_RADIANT_QUARTZ;
-			case "item_tomeofarcana":
-				return ItemRegistry.TOME_OF_ARCANA;
 			case "item_writofexpulsion":
 				return ItemRegistry.WRIT_OF_EXPULSION;
 			default:

@@ -1,0 +1,6 @@
+{
+	"name": "Items",
+	"sortnum": 1,
+	"description": "All of the items available in Arcane Archives.",
+	"icon": "arcanearchives:raw_quartz"
+}

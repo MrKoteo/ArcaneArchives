@@ -1,0 +1,26 @@
+{
+    "name": "Astral Sorcery Compatibility",
+    "icon": "astralsorcery:blockwell",
+    "category": "concepts",
+    "flag": "mod:astralsorcery",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "astralsorcery:blockwell",
+            "text": "$(br2)$(item)Raw Radiant Quartz$() $(l:items/raw_quartz)Raw Radiant Quartz$() generates Liquid Starlight. It is long lasting, but low production.$(br2)$(item)Shaped Radiant Quartz$() $(l:items/shaped_quartz)Shaped Radiant Quartz$() also generates Liquid Starlight. It is a bit more efficient than Raw Radiant Quartz.",
+            "title": "Lightwell"
+        },
+        {
+            "type": "text",
+            "text": "$(l:gems/rivertear)Rivertears$() generate water at about 2 buckets per tick. It is effectively infinite, but due to technical limits there is a ridiculously small chance of shattering.",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "Rivertear"
+        },
+        {
+            "type": "text",
+            "text": "$(l:gems/mountaintear)Mountaintears$() generate lava at a moderate rate. It is effectively infinite, but due to technical limits there is a ridiculously small chance of shattering.",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "Mountaintear"
+        }
+    ]
+}

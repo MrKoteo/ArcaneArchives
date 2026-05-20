@@ -2,7 +2,6 @@ package com.aranaira.arcanearchives.items.gems;
 
 import com.aranaira.arcanearchives.ArcaneArchives;
 import com.aranaira.arcanearchives.config.ConfigHandler;
-import com.aranaira.arcanearchives.init.ItemRegistry;
 import com.aranaira.arcanearchives.items.gems.GemUtil.GemStack;
 import com.aranaira.arcanearchives.items.templates.ItemTemplate;
 import net.minecraft.client.renderer.block.model.ModelBakery;
@@ -11,7 +10,6 @@ import net.minecraft.client.resources.I18n;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.EnumFacing;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Vec3d;
@@ -198,33 +196,7 @@ public abstract class ArcaneGemItem extends ItemTemplate {
 	 * @return
 	 */
 	protected boolean tryRechargingWithPowder (World world, EntityPlayer player, GemStack gem) {
-		IItemHandler cap = player.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY, EnumFacing.UP);
-		int fscp = -1;
-		boolean recharged = false;
-		for (int i = 0; i < cap.getSlots(); i++) {
-			if (cap.getStackInSlot(i).getItem() == ItemRegistry.RAINBOW_CHROMATIC_POWDER) {
-				fscp = i;
-			}
-
-			if (cap.getStackInSlot(i).getItem() == ItemRegistry.CHROMATIC_POWDER) {
-				if (GemRechargePowder.getColor(cap.getStackInSlot(i)) == gem.getArcaneGemItem().getGemColor()) {
-					informPlayerOfItemConsumption(player, gem, cap.getStackInSlot(i), 1);
-					cap.getStackInSlot(i).shrink(1);
-					GemUtil.restoreCharge(gem, -1);
-					recharged = true;
-					break;
-				}
-			}
-		}
-
-		if (fscp > -1 && !recharged) {
-			informPlayerOfItemConsumption(player, gem, cap.getStackInSlot(fscp), 1);
-			cap.getStackInSlot(fscp).shrink(1);
-			GemUtil.restoreCharge(gem, -1);
-			recharged = true;
-		}
-
-		return recharged;
+		return false;
 	}
 
 	/**

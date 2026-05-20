@@ -1,0 +1,24 @@
+{
+	"name": "Shaped Radiant Quartz",
+	"icon": "arcanearchives:shaped_quartz",
+	"category": "items",
+	"pages": [
+		{
+			"type": "spotlight",
+			"item": "arcanearchives:shaped_quartz",
+			"link_recipe": true,
+			"text": "Shaped Radiant Quartz is cut and polished Radiant Quartz that is suitable for more advanced uses. It is primarily a crafting component.$(br2)$(item)Astral Sorcery Lightwell$() When placed in a Lightwell with access to the sky, Shaped Radiant Quartz creates Liquid Starlight over time. Compared to Aquamarine, its production rate is significantly lower, but is much more resistant to shattering. Shaped Radiant Quartz is a bit more efficient than $(l:items/raw_quartz)Raw Radiant Quartz$().",
+			"flag": "mod:astralsorcery"
+		},
+		{
+			"type": "text",
+			"text": "Shaped Radiant Quartz can be crafted on a $(l:blocks/gemcutters_table)Gem Cutter's Table$()."
+		},
+		{
+			"type": "spotlight",
+			"item": "arcanearchives:storage_shaped_quartz",
+			"link_recipe": true,
+			"text": "Shaped Radiant Quartz can also be compressed into a storage block. Blocks of Shaped Radiant Quartz are a light source.$(br2)$(item)Radiant Tank$() Blocks of Shaped Radiant Quartz can be used to upgrade $(l:blocks/radiant_tank)Radiant Tanks$().$(br2)$(item)Radiant Trove$() Blocks of Shaped Radiant Quartz can be used to upgrade $(l:blocks/radiant_trove)Radiant Troves$()."
+		}
+	]
+}

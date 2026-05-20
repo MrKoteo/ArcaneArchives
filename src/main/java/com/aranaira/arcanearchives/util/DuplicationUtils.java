@@ -21,12 +21,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-@SuppressWarnings("UnstableApiUsage")
 public class DuplicationUtils {
 	public static Path FILE_PATH;
 
-	private static List<ItemStack> oresToDuplicate = new ArrayList<>();
-	private static List<Ingredient> ingredientsToDuplicate = new ArrayList<>();
+	private static final List<ItemStack> oresToDuplicate = new ArrayList<>();
+	private static final List<Ingredient> ingredientsToDuplicate = new ArrayList<>();
 	private static Type LIST_TYPE = new TypeToken<ArrayList<ItemStack>>() {}.getType();
 
 	public static void init () {

@@ -1,0 +1,27 @@
+{
+    "name": "Writ of Expulsion",
+    "icon": "arcanearchives:writ_expulsion",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:writ_expulsion",
+            "link_recipe": true,
+            "text": "A Writ of Expulsion can be used to forcibly remove a player from a $(l:concepts/networks)Hybrid Network$().$(br2)$(item)Anvil$() Once you've named the Writ of Expulsion on an anvil to the name of the desired player to kick from your network, use it to complete the process."
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:writ_expulsion"
+        },
+        {
+            "type": "text",
+            "title": "Lore",
+            "text": "$(italics)Master Sharaveda, it has become painfully clear that you no longer possess the objectivity necessary to act as a Master of the Eternal University.$(br2)You have become utterly obsessed with this material that you claim exists. Yet you have repeatedly failed to produce a shred of actual evidence for its existence, save for glowing fragments. A feat, I might add, that is achievable with a simple cantrip.$(br2)It is the opinion of this counsel that your mind has been addled by your thaumaturgical studies. You see things that cannot be because of the Warp that has twisted your mind.$()",
+            "flag": "mod:thaumcraft"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)Given your age, it is the opinion of this counsel that your mind is degenerating into senility. These five and six sided shapes you speak of are nonsense; the delusions of a feeble old coot who fails to accept that a theory could be wrong.$()$(br2)$(italics)A judgment has been reached by a majority of the Quadrate. You have strayed from the path of Wisdom, and your right to Enlightenment is forfeit. You are banished from the Eternal University, and no longer bear the title of Master. You may no longer practice your craft or step foot into the University on pain of execution.$()$(br2)$(bold)Final statement at Sharaveda's disciplinary inquest$()$(br)...Kurst of the Green Flame, Tetrarch of Research$(br)...1670, Spring's Height"
+        }
+    ]
+}

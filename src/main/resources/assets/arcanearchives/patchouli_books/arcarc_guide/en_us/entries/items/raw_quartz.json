@@ -1,0 +1,37 @@
+{
+    "name": "Raw Radiant Quartz",
+    "icon": "arcanearchives:raw_quartz",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:raw_quartz",
+            "link_recipe": true,
+            "text": "Raw Radiant Quartz is an unrefined magical crystal that makes up the basis of all of Arcane Archives. It is primarily a crafting component.$(br2)$(item)Chest$() Raw Radiant Quartz can be used to convert a chest to a $(l:blocks/radiant_chest)Radiant Chest$().$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "Raw Radiant Quartz can be used to convert a crafting table into a $(l:blocks/radiant_crafting_table)Radiant Crafting Table$().",
+            "title": "Crafting Table"
+        },
+        {
+            "type": "text",
+            "text": "Raw Radiant Quartz can be used to create $(l:items/sliver_of_light)Slivers of Light$() by bashing a piece against another block.$(br2)$(item)Astral Sorcery Lightwell$() When placed in a Lightwell with access to the sky, Raw Radiant Quartz creates Liquid Starlight over time. Compared to Aquamarine, its production rate is significantly lower, but is much more resistant to shattering.",
+            "flag": "mod:astralsorcery",
+            "title": "Slivers of Light"
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "blocks/radiant_resonator"
+            ],
+            "text": "Raw Radiant Quartz is created over time on top of a $(l:blocks/radiant_resonator)Radiant Resonator$() in the form of a $(l:blocks/raw_quartz_cluster)Raw Quartz Cluster$()."
+        },
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:storage_raw_quartz",
+            "link_recipe": true,
+            "text": "Raw Radiant Quartz can also be compressed into a storage block. Blocks of Raw Radiant Quartz are a light source."
+        }
+    ]
+}

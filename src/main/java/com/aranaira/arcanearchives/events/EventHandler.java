@@ -1,5 +1,6 @@
 package com.aranaira.arcanearchives.events;
 
+import com.aranaira.arcanearchives.ArcaneArchives;
 import com.aranaira.arcanearchives.client.render.LineHandler;
 import com.aranaira.arcanearchives.client.render.RenderGemcasting;
 import com.aranaira.arcanearchives.client.render.RenderGemcasting.EnumGemGuiMode;
@@ -36,7 +37,6 @@ import com.aranaira.arcanearchives.types.iterators.SlotIterable;
 import com.aranaira.arcanearchives.util.ItemUtils;
 import com.aranaira.arcanearchives.util.WorldUtil;
 import epicsquid.mysticallib.util.Util;
-import gigaherz.guidebook.client.BookRegistryEvent;
 import it.unimi.dsi.fastutil.objects.Object2LongOpenHashMap;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockBookshelf;
@@ -96,6 +96,8 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandler;
 import thaumcraft.common.tiles.crafting.TileCrucible;
 import vazkii.botania.api.item.IPetalApothecary;
+import vazkii.patchouli.common.item.ItemModBook;
+import vazkii.patchouli.common.item.PatchouliItems;
 
 import java.util.ArrayList;
 import java.util.Objects;
@@ -343,14 +345,6 @@ public class EventHandler {
 		}
 	}
 
-	@Optional.Method(modid = "gbook")
-	@SubscribeEvent
-	@SideOnly(Side.CLIENT)
-	@SuppressWarnings("unused")
-	public static void registerBook (BookRegistryEvent event) {
-		event.register(TomeOfArcanaItem.TOME_OF_ARCANA);
-	}
-
 	@SubscribeEvent
 	public static void onEntityJoinedWorld (EntityJoinWorldEvent event) {
 		Entity entity = event.getEntity();
@@ -508,10 +502,7 @@ public class EventHandler {
 		}
 		save.receivedBook = true;
 		save.markDirty();
-		ItemStack tome = new ItemStack(ItemRegistry.TOME_OF_ARCANA);
-		NBTTagCompound tag = ItemUtils.getOrCreateTagCompound(tome);
-		tag.setString("Book", TomeOfArcanaItem.TOME_OF_ARCANA.toString());
-		Objects.requireNonNull(world.getMapStorage()).saveAllData();
+		ItemStack tome = ItemModBook.forBook("arcanearchives:arcarc_guide");
 		EntityItem tomeEntity = new EntityItem(world, player.posX, player.posY, player.posZ, tome);
 		tomeEntity.setPickupDelay(0);
 		if (bookshelf) {
@@ -536,7 +527,7 @@ public class EventHandler {
 			Item item = event.crafting.getItem();
 			if (item instanceof ItemBlock && ((ItemBlock) item).getBlock() == BlockRegistry.RADIANT_RESONATOR) {
 				givePlayerBookMaybe(event.player, event.player.world, false);
-			} else if (item == ItemRegistry.TOME_OF_ARCANA) {
+			} else if (item == PatchouliItems.book && ItemModBook.getBook(event.crafting).owner.getModId().equals(ArcaneArchives.MODID)) {
 				World world = event.player.world;
 				EntityPlayer player = event.player;
 				PlayerSaveData save = DataHelper.getPlayerData(player);

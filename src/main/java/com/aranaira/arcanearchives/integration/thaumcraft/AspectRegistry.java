@@ -88,7 +88,7 @@ public class AspectRegistry {
 
 			helper.registerTCObjectTag(ItemRegistry.BAUBLE_GEMSOCKET, new AspectList().add(Aspect.MAGIC, 10).add(Aspect.CRYSTAL, 5).add(Aspect.DESIRE, 5).add(Aspect.BEAST, 5));
 
-			helper.registerTCObjectTag(ItemRegistry.TOME_OF_ARCANA, new AspectList().add(Aspect.MIND, 25).add(Aspect.MAGIC, 5));
+			//helper.registerTCObjectTag(ItemRegistry.TOME_OF_ARCANA, new AspectList().add(Aspect.MIND, 25).add(Aspect.MAGIC, 5));
 
 			//DECORATIVE
 			helper.registerTCObjectTag(BlockRegistry.RADIANT_LANTERN, new AspectList().add(Aspect.LIGHT, 10).add(Aspect.CRYSTAL, 5).add(Aspect.DESIRE, 5));
@@ -125,9 +125,9 @@ public class AspectRegistry {
 			helper.registerTCObjectTag(ItemRegistry.STORMWAY, new AspectList().add(Aspect.MAGIC, 30).add(Aspect.CRYSTAL, 30).add(Aspect.ENERGY, 30));
 
 			//GEM RECHARGE POWDER
-			helper.registerTCObjectTag(ItemRegistry.CHROMATIC_POWDER, new AspectList().add(Aspect.ENERGY, 20).add(Aspect.SENSES, 10).add(Aspect.AURA, 5));
+			//helper.registerTCObjectTag(ItemRegistry.CHROMATIC_POWDER, new AspectList().add(Aspect.ENERGY, 20).add(Aspect.SENSES, 10).add(Aspect.AURA, 5));
 
-			helper.registerTCObjectTag(ItemRegistry.RAINBOW_CHROMATIC_POWDER, new AspectList().add(Aspect.ENERGY, 180).add(Aspect.SENSES, 90).add(Aspect.AURA, 45));
+			//helper.registerTCObjectTag(ItemRegistry.RAINBOW_CHROMATIC_POWDER, new AspectList().add(Aspect.ENERGY, 180).add(Aspect.SENSES, 90).add(Aspect.AURA, 45));
 
 		} catch (Exception e) {
 			ArcaneArchives.logger.error("[Arcane Archives] Error registering Thaumcraft aspects: " + e.getLocalizedMessage());

@@ -1,14 +1,14 @@
 {
-	"name": "Arcane Tome Thingy",
+	"name": "Tome of Arcana",
 	"advancement_namespaces": [
 		"arcanearchives"
 	],
 	"creative_tab": "arcanearchives",
 	"advancements_tab": "arcanearchives",
-	"landing_text": "BUZZ",
+	"landing_text": "This tome contains everything you need to know about Arcane Archives, from the basic principles of Radiant Quartz to advanced devices and Arcane Gems.",
 	"book_texture": "arcanearchives:textures/gui/patchouli/book.png",
 	"filler_texture": "arcanearchives:textures/gui/patchouli/book_filler.png",
-	"model": "minecraft:book",
+	"model": "arcanearchives:tome_arcana",
 	"version": 1,
 	"show_progress": false,
 	"macros": {

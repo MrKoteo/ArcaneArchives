@@ -1,0 +1,15 @@
+{
+    "name": "Potion Core Compatibility",
+    "icon": "minecraft:potion",
+    "category": "concepts",
+    "flag": "mod:potioncore",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:potion",
+            "text": "$(br2)$(item)Cleansegleam$() A $(l:gems/cleansegleam)Cleansegleam$() applies the Antidote effect when used.",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "Effects"
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 package com.aranaira.arcanearchives;
 
+import com.aranaira.arcanearchives.config.ConfigHandler;
 import com.aranaira.arcanearchives.proxy.CommonProxy;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.common.Mod;
@@ -7,10 +8,11 @@ import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.*;
 import org.apache.logging.log4j.Logger;
+import vazkii.patchouli.api.PatchouliAPI;
 
 import java.io.File;
 
-@Mod(modid = ArcaneArchives.MODID, name = ArcaneArchives.NAME, version = ArcaneArchives.VERSION, dependencies = "required-after:gbook;after:baubles;required-before:mysticallib;after:thaumcraft")
+@Mod(modid = ArcaneArchives.MODID, name = ArcaneArchives.NAME, version = ArcaneArchives.VERSION, dependencies = "required-after:patchouli;after:baubles;required-before:mysticallib;after:thaumcraft")
 public class ArcaneArchives {
     public static final String MODID = "arcanearchives";
     public static final String NAME = "Arcane Archives";
@@ -34,6 +36,11 @@ public class ArcaneArchives {
     @EventHandler
     public static void init(FMLInitializationEvent event) {
         proxy.init(event);
+        setupPatchouliFlags();
+    }
+
+    private static void setupPatchouliFlags() {
+        PatchouliAPI.instance.setConfigFlag("arcanearchives:arsenal_enabled", ConfigHandler.ArsenalConfig.EnableArsenal);
     }
 
     @EventHandler

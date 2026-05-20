@@ -4,12 +4,9 @@ import com.aranaira.arcanearchives.ArcaneArchives;
 import com.aranaira.arcanearchives.blocks.templates.BlockTemplate;
 import com.aranaira.arcanearchives.config.ConfigHandler;
 import com.aranaira.arcanearchives.items.*;
-import com.aranaira.arcanearchives.items.gems.GemRechargePowder;
-import com.aranaira.arcanearchives.items.gems.GemRechargePowderRainbow;
 import com.aranaira.arcanearchives.items.gems.asscher.*;
 import com.aranaira.arcanearchives.items.gems.oval.MunchstoneItem;
 import com.aranaira.arcanearchives.items.gems.oval.OrderstoneItem;
-import com.aranaira.arcanearchives.items.gems.oval.TransferstoneItem;
 import com.aranaira.arcanearchives.items.gems.pampel.Elixirspindle;
 import com.aranaira.arcanearchives.items.gems.pampel.MindspindleItem;
 import com.aranaira.arcanearchives.items.gems.pendeloque.MountaintearItem;
@@ -41,8 +38,8 @@ public class ItemRegistry {
 
 	public static final RawQuartzItem RAW_RADIANT_QUARTZ = new RawQuartzItem();
 	public static final ShapedQuartzItem SHAPED_RADIANT_QUARTZ = new ShapedQuartzItem();
-	public static final EmpoweredQuartzItem EMPOWERED_RADIANT_QUARTZ = new EmpoweredQuartzItem();
-	public static final EchoItem ECHO = new EchoItem();
+	//public static final EmpoweredQuartzItem EMPOWERED_RADIANT_QUARTZ = new EmpoweredQuartzItem();
+	//public static final EchoItem ECHO = new EchoItem();
 	public static final ManifestItem MANIFEST = new ManifestItem();
 	public static final RadiantAmphoraItem RADIANT_AMPHORA = new RadiantAmphoraItem();
 	public static final ScepterRevelationItem SCEPTER_REVELATION = new ScepterRevelationItem();
@@ -68,8 +65,8 @@ public class ItemRegistry {
 
 	//DEVICE UPGRADES
 	public static final DevouringCharmItem DEVOURING_CHARM = new DevouringCharmItem();
-	public static final ObstructionCharmItem OBSTRUCTION_CHARM = new ObstructionCharmItem();
-	public static final SerenityCharmItem SERENITY_CHARM = new SerenityCharmItem();
+	//public static final ObstructionCharmItem OBSTRUCTION_CHARM = new ObstructionCharmItem();
+	//public static final SerenityCharmItem SERENITY_CHARM = new SerenityCharmItem();
 
 	//ARCANE GEMS
 	public static final FabrialItem FABRIAL = new FabrialItem();
@@ -82,7 +79,7 @@ public class ItemRegistry {
 	public static final SalvegleamItem SALVEGLEAM = new SalvegleamItem();
 
 	public static final MunchstoneItem MUNCHSTONE = new MunchstoneItem();
-	public static final TransferstoneItem TRANSFERSTONE = new TransferstoneItem();
+	//public static final TransferstoneItem TRANSFERSTONE = new TransferstoneItem();
 	public static final OrderstoneItem ORDERSTONE = new OrderstoneItem();
 
 	public static final MindspindleItem MINDSPINDLE = new MindspindleItem();
@@ -95,10 +92,10 @@ public class ItemRegistry {
 	public static final PhoenixwayItem PHOENIXWAY = new PhoenixwayItem();
 	public static final StormwayItem STORMWAY = new StormwayItem();
 
-	public static final GemRechargePowder CHROMATIC_POWDER = new GemRechargePowder();
-	public static final GemRechargePowderRainbow RAINBOW_CHROMATIC_POWDER = new GemRechargePowderRainbow();
+	//public static final GemRechargePowder CHROMATIC_POWDER = new GemRechargePowder();
+	//public static final GemRechargePowderRainbow RAINBOW_CHROMATIC_POWDER = new GemRechargePowderRainbow();
 
-	public static List<Item> ARSENAL_ITEMS = Arrays.asList(/*FABRIAL, */SLAUGHTERGLEAM, MURDERGLEAM, AGEGLEAM, CLEANSEGLEAM, SWITCHGLEAM, SALVEGLEAM, MUNCHSTONE, /*TRANSFERSTONE,*/ ORDERSTONE, MINDSPINDLE, ELIXIRSPINDLE, MOUNTAINTEAR, RIVERTEAR, PARCHTEAR, PHOENIXWAY, STORMWAY, CHROMATIC_POWDER, RAINBOW_CHROMATIC_POWDER);
+	public static List<Item> ARSENAL_ITEMS = Arrays.asList(/*FABRIAL, */SLAUGHTERGLEAM, MURDERGLEAM, AGEGLEAM, CLEANSEGLEAM, SWITCHGLEAM, SALVEGLEAM, MUNCHSTONE, /*TRANSFERSTONE,*/ ORDERSTONE, MINDSPINDLE, ELIXIRSPINDLE, MOUNTAINTEAR, RIVERTEAR, PARCHTEAR, PHOENIXWAY, STORMWAY);
 	//BAUBLES
 	public static final GemSocket BAUBLE_GEMSOCKET = new GemSocket();
 
@@ -112,9 +109,9 @@ public class ItemRegistry {
 	public static void onItemRegister (RegistryEvent.Register<Item> event) {
 		IForgeRegistry<Item> registry = event.getRegistry();
 
-		Arrays.asList(RAW_RADIANT_QUARTZ, SHAPED_RADIANT_QUARTZ, EMPOWERED_RADIANT_QUARTZ, DEBUG_ORB, /*GEOMANCY_PENDULUM, GEOMANTIC_MAP,*/ MANIFEST, /*RADIANT_AMPHORA, SCEPTER_ABDUCTION, */TOME_OF_ARCANA, LETTER_OF_INVITATION, LETTER_OF_RESIGNATION, WRIT_OF_EXPULSION,/* TOME_OF_REQUISITION,*/ RADIANT_AMPHORA, COMPONENT_CONTAINMENTFIELD, COMPONENT_MATRIXBRACE, COMPONENT_MATERIALINTERFACE, COMPONENT_RADIANTDUST, COMPONENT_SCINTILLATINGINLAY, DEVOURING_CHARM, OBSTRUCTION_CHARM, SERENITY_CHARM/*, SPIRIT_ORB*/, SCEPTER_REVELATION, SCEPTER_MANIPULATION, SCEPTER_TRANSLOCATION, ECHO, BAUBLE_GEMSOCKET, /*FABRIAL*/ SLAUGHTERGLEAM, MURDERGLEAM, AGEGLEAM, CLEANSEGLEAM, SWITCHGLEAM, SALVEGLEAM, MUNCHSTONE, /*TRANSFERSTONE,*/ ORDERSTONE, MINDSPINDLE, ELIXIRSPINDLE, MOUNTAINTEAR, RIVERTEAR, PARCHTEAR, PHOENIXWAY, STORMWAY, CHROMATIC_POWDER, RAINBOW_CHROMATIC_POWDER, RADIANT_KEY).forEach(registry::register);
+		Arrays.asList(RAW_RADIANT_QUARTZ, SHAPED_RADIANT_QUARTZ, /*EMPOWERED_RADIANT_QUARTZ,*/ DEBUG_ORB, /*GEOMANCY_PENDULUM, GEOMANTIC_MAP,*/ MANIFEST, /*RADIANT_AMPHORA, SCEPTER_ABDUCTION, TOME_OF_ARCANA,*/ LETTER_OF_INVITATION, LETTER_OF_RESIGNATION, WRIT_OF_EXPULSION,/* TOME_OF_REQUISITION,*/ RADIANT_AMPHORA, COMPONENT_CONTAINMENTFIELD, COMPONENT_MATRIXBRACE, COMPONENT_MATERIALINTERFACE, COMPONENT_RADIANTDUST, COMPONENT_SCINTILLATINGINLAY, DEVOURING_CHARM, /*OBSTRUCTION_CHARM, SERENITY_CHARM,*/ /*, SPIRIT_ORB*/ SCEPTER_REVELATION, SCEPTER_MANIPULATION, SCEPTER_TRANSLOCATION, /*ECHO,*/ BAUBLE_GEMSOCKET, /*FABRIAL*/ SLAUGHTERGLEAM, MURDERGLEAM, AGEGLEAM, CLEANSEGLEAM, SWITCHGLEAM, SALVEGLEAM, MUNCHSTONE, /*TRANSFERSTONE,*/ ORDERSTONE, MINDSPINDLE, ELIXIRSPINDLE, MOUNTAINTEAR, RIVERTEAR, PARCHTEAR, PHOENIXWAY, STORMWAY, /*CHROMATIC_POWDER, RAINBOW_CHROMATIC_POWDER,*/ RADIANT_KEY).forEach(registry::register);
 
-		Stream.of(BlockRegistry.MATRIX_CRYSTAL_CORE, BlockRegistry.MATRIX_REPOSITORY, BlockRegistry.MATRIX_RESERVOIR, BlockRegistry.MATRIX_STORAGE, BlockRegistry.MATRIX_DISTILLATE, BlockRegistry.QUARTZ_SLIVER, BlockRegistry.STORAGE_RAW_QUARTZ, BlockRegistry.STORAGE_SHAPED_QUARTZ, BlockRegistry.RADIANT_CHEST, BlockRegistry.RADIANT_CRAFTING_TABLE, BlockRegistry.RADIANT_FURNACE, BlockRegistry.RADIANT_LANTERN, BlockRegistry.RADIANT_RESONATOR, BlockRegistry.RAW_QUARTZ/*, BlockRegistry.DOMINION_CRYSTAL*/, BlockRegistry.LECTERN_MANIFEST, BlockRegistry.GEMCUTTERS_TABLE, BlockRegistry.RADIANT_TROVE, BlockRegistry.MONITORING_CRYSTAL, BlockRegistry.RADIANT_TANK, BlockRegistry.BRAZIER_OF_HOARDING, BlockRegistry.IMMANENT_INCUBATOR, BlockRegistry.ECHOING_CONFORMANCE_CHAMBER, BlockRegistry.ECHOING_REVERBERATION_CHAMBER, BlockRegistry.DRUIDIC_CENSER, BlockRegistry.SPELLBOOK_LIBRARY, BlockRegistry.CELESTIAL_LOTUS_ENGINE, BlockRegistry.WONKY_RESONATOR).map(BlockTemplate::getItemBlock).forEach(registry::register);
+		Stream.of(BlockRegistry.QUARTZ_SLIVER, BlockRegistry.STORAGE_RAW_QUARTZ, BlockRegistry.STORAGE_SHAPED_QUARTZ, BlockRegistry.RADIANT_CHEST, BlockRegistry.RADIANT_CRAFTING_TABLE, BlockRegistry.RADIANT_LANTERN, BlockRegistry.RADIANT_RESONATOR, BlockRegistry.RAW_QUARTZ/*, BlockRegistry.DOMINION_CRYSTAL*/, BlockRegistry.LECTERN_MANIFEST, BlockRegistry.GEMCUTTERS_TABLE, BlockRegistry.RADIANT_TROVE, BlockRegistry.MONITORING_CRYSTAL, BlockRegistry.RADIANT_TANK, BlockRegistry.BRAZIER_OF_HOARDING, BlockRegistry.WONKY_RESONATOR).map(BlockTemplate::getItemBlock).forEach(registry::register);
 
 		if (ConfigHandler.ArsenalConfig.EnableArsenal) {
 			registry.register(GBOOK_ARSENAL_CONDITION);
@@ -126,12 +123,9 @@ public class ItemRegistry {
 
 	@SubscribeEvent
 	public static void onModelRegister (ModelRegistryEvent event) {
-		Arrays.asList(RAW_RADIANT_QUARTZ, SHAPED_RADIANT_QUARTZ, EMPOWERED_RADIANT_QUARTZ, DEBUG_ORB, /*GEOMANCY_PENDULUM, GEOMANTIC_MAP,*/ MANIFEST, /*RADIANT_AMPHORA, SCEPTER_ABDUCTION, */ LETTER_OF_INVITATION, LETTER_OF_RESIGNATION, WRIT_OF_EXPULSION, /*TOME_OF_REQUISITION,*/ RADIANT_AMPHORA, COMPONENT_CONTAINMENTFIELD, COMPONENT_MATRIXBRACE, COMPONENT_MATERIALINTERFACE, COMPONENT_RADIANTDUST, COMPONENT_SCINTILLATINGINLAY, DEVOURING_CHARM, OBSTRUCTION_CHARM, SERENITY_CHARM/*, SPIRIT_ORB*/, SCEPTER_REVELATION, SCEPTER_MANIPULATION, SCEPTER_TRANSLOCATION, ECHO, BAUBLE_GEMSOCKET, /*FABRIAL*/ SLAUGHTERGLEAM, MURDERGLEAM, AGEGLEAM, CLEANSEGLEAM, SWITCHGLEAM, SALVEGLEAM, MUNCHSTONE, /*TRANSFERSTONE,*/ ORDERSTONE, MINDSPINDLE, ELIXIRSPINDLE, MOUNTAINTEAR, RIVERTEAR, PARCHTEAR, PHOENIXWAY, STORMWAY, CHROMATIC_POWDER, RAINBOW_CHROMATIC_POWDER, RADIANT_KEY).forEach(ItemTemplate::registerModels);
+		Arrays.asList(RAW_RADIANT_QUARTZ, SHAPED_RADIANT_QUARTZ, /*EMPOWERED_RADIANT_QUARTZ,*/ DEBUG_ORB, /*GEOMANCY_PENDULUM, GEOMANTIC_MAP,*/ MANIFEST, /*RADIANT_AMPHORA, SCEPTER_ABDUCTION, */ LETTER_OF_INVITATION, LETTER_OF_RESIGNATION, WRIT_OF_EXPULSION, /*TOME_OF_REQUISITION,*/ RADIANT_AMPHORA, COMPONENT_CONTAINMENTFIELD, COMPONENT_MATRIXBRACE, COMPONENT_MATERIALINTERFACE, COMPONENT_RADIANTDUST, COMPONENT_SCINTILLATINGINLAY, DEVOURING_CHARM, /*OBSTRUCTION_CHARM, SERENITY_CHARM,*/ /*, SPIRIT_ORB*/ SCEPTER_REVELATION, SCEPTER_MANIPULATION, SCEPTER_TRANSLOCATION, /*ECHO,*/ BAUBLE_GEMSOCKET, /*FABRIAL*/ SLAUGHTERGLEAM, MURDERGLEAM, AGEGLEAM, CLEANSEGLEAM, SWITCHGLEAM, SALVEGLEAM, MUNCHSTONE, /*TRANSFERSTONE,*/ ORDERSTONE, MINDSPINDLE, ELIXIRSPINDLE, MOUNTAINTEAR, RIVERTEAR, PARCHTEAR, PHOENIXWAY, STORMWAY, /*CHROMATIC_POWDER, RAINBOW_CHROMATIC_POWDER,*/ RADIANT_KEY).forEach(ItemTemplate::registerModels);
 
-		Stream.of(BlockRegistry.MATRIX_CRYSTAL_CORE, BlockRegistry.MATRIX_REPOSITORY, BlockRegistry.MATRIX_RESERVOIR, BlockRegistry.MATRIX_STORAGE, BlockRegistry.MATRIX_DISTILLATE, BlockRegistry.STORAGE_RAW_QUARTZ, BlockRegistry.STORAGE_SHAPED_QUARTZ, BlockRegistry.RADIANT_CHEST, BlockRegistry.RADIANT_CRAFTING_TABLE, BlockRegistry.RADIANT_FURNACE, BlockRegistry.RADIANT_LANTERN, BlockRegistry.RADIANT_RESONATOR, BlockRegistry.RAW_QUARTZ, /*BlockRegistry.DOMINION_CRYSTAL, */BlockRegistry.LECTERN_MANIFEST, BlockRegistry.GEMCUTTERS_TABLE, BlockRegistry.RADIANT_TROVE, BlockRegistry.MONITORING_CRYSTAL, BlockRegistry.BRAZIER_OF_HOARDING, BlockRegistry.IMMANENT_INCUBATOR, BlockRegistry.ECHOING_CONFORMANCE_CHAMBER, BlockRegistry.ECHOING_REVERBERATION_CHAMBER, BlockRegistry.DRUIDIC_CENSER, BlockRegistry.SPELLBOOK_LIBRARY, BlockRegistry.CELESTIAL_LOTUS_ENGINE, BlockRegistry.WONKY_RESONATOR).map(BlockTemplate::getItemBlock).forEach((block) -> ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation(block.getRegistryName(), "inventory")));
-
-		// has to be a bit special because it's a ItemGuidebook
-		TOME_OF_ARCANA.registerModels();
+		Stream.of(BlockRegistry.QUARTZ_SLIVER, BlockRegistry.STORAGE_RAW_QUARTZ, BlockRegistry.STORAGE_SHAPED_QUARTZ, BlockRegistry.RADIANT_CHEST, BlockRegistry.RADIANT_CRAFTING_TABLE, BlockRegistry.RADIANT_LANTERN, BlockRegistry.RADIANT_RESONATOR, BlockRegistry.RAW_QUARTZ, /*BlockRegistry.DOMINION_CRYSTAL, */BlockRegistry.LECTERN_MANIFEST, BlockRegistry.GEMCUTTERS_TABLE, BlockRegistry.RADIANT_TROVE, BlockRegistry.MONITORING_CRYSTAL, BlockRegistry.BRAZIER_OF_HOARDING, BlockRegistry.WONKY_RESONATOR).map(BlockTemplate::getItemBlock).forEach((block) -> ModelLoader.setCustomModelResourceLocation(block, 0, new ModelResourceLocation(block.getRegistryName(), "inventory")));
 
 		/*SPIRIT_ORB.registerModels();*/
 	}

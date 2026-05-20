@@ -1,0 +1,45 @@
+{
+    "name": "Radiant Resonator",
+    "icon": "arcanearchives:radiant_resonator",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_resonator",
+            "link_recipe": true,
+            "text": "A Radiant Resonator produces a cluster of Raw Radiant Quartz in the block above itself once every five minutes. Once Quartz is produced, the process halts until the block above the Resonator is cleared.$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "You can only place up to three Radiant Resonators. Any further Resonators you attempt to place will pop off, and any Resonators placed by automated means will destroy themselves.$(br2)Radiant Resonators only run while $(italics)you're$() online, even if the chunk is loaded."
+        },
+        {
+            "type": "text",
+            "text": "Using a $(l:items/scepter_revelation)Scepter of Revelation$() on a Radiant Resonator will return its current process, and whether it is running or not.",
+            "title": "Scepter of Revelation"
+        },
+        {
+            "type": "text",
+            "text": "When monitored with a Redstone Comparator, a Radiant Resonator outputs a signal based on its progress towards creating a new $(l:blocks/raw_quartz_cluster)Radiant Quartz Cluster$().",
+            "title": "Redstone Comparator"
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:radiant_resonator",
+            "text": "Radiant Resonators can be crafted conventionally."
+        },
+        {
+            "type": "image",
+            "images": [
+                "arcanearchives:textures/gui/guidebook/lore_resonator.png"
+            ],
+            "title": "Lore",
+            "border": false,
+            "text": "$(bold)Found in the notes of Sharaveda, Deceased$()$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "...Annotation made by Traylin, former Apprentice of the deceased$(br2)...1672, Winter's Birth"
+        }
+    ]
+}

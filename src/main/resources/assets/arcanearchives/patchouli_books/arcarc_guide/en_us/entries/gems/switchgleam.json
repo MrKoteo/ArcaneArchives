@@ -1,0 +1,18 @@
+{
+    "name": "Switchgleam",
+    "icon": "arcanearchives:switchgleam",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:switchgleam",
+            "link_recipe": true,
+            "text": "A Switchgleam is an Arcane Gem formed from a purple-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When activated, a Switchgleam will swap the positions of you and the entity you're looking at, at the cost of one point of charge.$(br2)While held, Endermen within 10 blocks will have their teleportation attempts absorbed.$(br2)To recharge a dun Switchgleam, allow it to absorb Enderman teleportation. Each teleport attempt absorbed restores three points of charge."
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:switchgleam"
+        }
+    ]
+}

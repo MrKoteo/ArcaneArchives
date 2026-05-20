@@ -1,45 +1,38 @@
 package com.aranaira.arcanearchives.items;
 
 import com.aranaira.arcanearchives.ArcaneArchives;
-import com.aranaira.arcanearchives.blocks.IHasModel;
-import gigaherz.guidebook.guidebook.ItemGuidebook;
-import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import com.aranaira.arcanearchives.items.templates.ItemTemplate;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
-import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.util.ActionResult;
+import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
-import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+import vazkii.patchouli.api.PatchouliAPI;
 
 import java.util.List;
 
-public class TomeOfArcanaItem extends ItemGuidebook implements IHasModel {
+public class TomeOfArcanaItem extends ItemTemplate {
 	public static final String NAME = "tome_arcana";
-	public static final ResourceLocation TOME_OF_ARCANA = new ResourceLocation(ArcaneArchives.MODID, "xml/tome.xml");
+	public static final ResourceLocation BOOK_ID = new ResourceLocation(ArcaneArchives.MODID, "arcarc_guide");
 
 	public TomeOfArcanaItem () {
-		setTranslationKey(NAME);
-		setRegistryName(new ResourceLocation(ArcaneArchives.MODID, NAME));
-		setCreativeTab(ArcaneArchives.TAB);
-		setHasSubtypes(true);
+		super(NAME);
 		setMaxStackSize(1);
 	}
 
 	@Override
-	public void getSubItems (CreativeTabs tab, NonNullList<ItemStack> subItems) {
-		if (this.isInCreativeTab(tab)) {
-			subItems.add(of(TOME_OF_ARCANA));
+	public ActionResult<ItemStack> onItemRightClick (World world, EntityPlayer player, EnumHand hand) {
+		if (world.isRemote) {
+            PatchouliAPI.instance.openBookGUI(BOOK_ID);
 		}
-	}
-
-	@Override
-	public void registerModels () {
-		ModelLoader.setCustomModelResourceLocation(this, 0, new ModelResourceLocation(getRegistryName(), "inventory"));
+		return ActionResult.newResult(EnumActionResult.SUCCESS, player.getHeldItem(hand));
 	}
 
 	@Override

@@ -1,0 +1,17 @@
+{
+    "name": "Scepter of Manipulation",
+    "icon": "arcanearchives:scepter_manipulation",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:scepter_manipulation",
+            "link_recipe": true,
+            "text": "A Scepter of Manipulation is used modify properties of certain Arcane Archives blocks.$(br2)The following blocks have interactions with a Scepter of Manipulation:$(br2)$(l:blocks/radiant_chest)Radiant Chest$()$(br)$(l:blocks/radiant_tank)Radiant Tank$()$(br)$(l:blocks/radiant_trove)Radiant Trove$()$(br)$(l:blocks/brazier_hoarding)Brazier of Hoarding$()"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:scepter_manipulation"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Scepter of Revelation",
+    "icon": "arcanearchives:scepter_revelation",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:scepter_revelation",
+            "link_recipe": true,
+            "text": "A Scepter of Revelation is used to query information about specific Arcane Archives blocks if used while sneaking.$(br2)The following blocks have interactions with a Scepter of Revelation:$(br2)$(l:blocks/monitoring_crystal)Monitoring Crystal$()$(br)$(l:blocks/radiant_chest)Radiant Chest$()$(br)$(l:blocks/radiant_crafting_table)Radiant Crafting Table$()$(br)$(l:blocks/radiant_resonator)Radiant Resonator$()$(br)$(l:blocks/radiant_tank)Radiant Tank$()$(br)$(l:blocks/radiant_trove)Radiant Trove$()"
+        },
+        {
+            "type": "text",
+            "text": "Scepters of Revelation are also used as a crafting component for other Scepters."
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:scepter_revelation",
+            "text": "Scepters of Revelation can be crafted conventionally."
+        },
+        {
+            "type": "text",
+            "title": "Lore",
+            "text": "$(italics)A series of simple divination spells grants this scepter a number of useful information divining abilities. It is standard University procedure to gather data from your experiments using primarily your Scepter of Revelation.$(br2)Should your experiments be likely to result in personal injury, your Scepter of Revelation is imbued with a danger-sensing spell and will begin to vibrate wildly. In such a case, you have approximately sixty seconds to vacate the premises.$(br2)The Eternal University is not responsible for healing injuries sustained by careless laboratory procedure.$()"
+        },
+        {
+            "type": "text",
+            "text": "$(br)...Form letter given to all Apprentices of the Eternal University$(br2)$(italics)Interesting. The Scepter of Revelation's ability to divine information appears to be greatly enhanced when the crystalline material (which I have dubbed Radiant Quartz) is attached as a prism of sorts.$(br2)Unlike my previous instruments, using this newly improved Scepter of Revelation is returning consistent results from my storage contraption.$(br2)Unfortunately, it seems to have lost its precognitive warning capabilities.$()$(br2)$(bold)Addendum$()$(br)...Sharaveda$(br)...1665, Summer's Birth",
+            "title": "The Apprentice's Panoply"
+        }
+    ]
+}

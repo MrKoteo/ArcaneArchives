@@ -142,11 +142,11 @@ public class RecipeLibrary {
 
 		DEVOURING_CHARM_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("devouring_charm", new ItemStack(ItemRegistry.DEVOURING_CHARM, 4), new IngredientStack("ingotGold", 1), new IngredientStack(Blocks.OBSIDIAN, 2), new IngredientStack(Items.FLINT_AND_STEEL, 1));
 
-		OBSTRUCTION_CHARM_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("obstruction_charm", new ItemStack(ItemRegistry.OBSTRUCTION_CHARM, 4), new IngredientStack(Blocks.HARDENED_CLAY, 1), new IngredientStack("nuggetGold", 2), new IngredientStack(ItemRegistry.SHAPED_RADIANT_QUARTZ, 1));
+		//OBSTRUCTION_CHARM_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("obstruction_charm", new ItemStack(ItemRegistry.OBSTRUCTION_CHARM, 4), new IngredientStack(Blocks.HARDENED_CLAY, 1), new IngredientStack("nuggetGold", 2), new IngredientStack(ItemRegistry.SHAPED_RADIANT_QUARTZ, 1));
 
 		RADIANT_KEY_RECIPE = GCTRecipeList.instance.makeAndAddRecipeWithCreator("radiant_key", new ItemStack(ItemRegistry.RADIANT_KEY, 4), new IngredientStack("ingotGold", 1), new IngredientStack("nuggetGold", 3), new IngredientStack(ItemRegistry.SHAPED_RADIANT_QUARTZ));
 
-		SERENITY_CHARM_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("serenity_charm", new ItemStack(ItemRegistry.SERENITY_CHARM, 4), new IngredientStack("nuggetGold", 3), new IngredientStack("wool", 1), new IngredientStack(ItemRegistry.COMPONENT_RADIANTDUST, 1));
+		//SERENITY_CHARM_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("serenity_charm", new ItemStack(ItemRegistry.SERENITY_CHARM, 4), new IngredientStack("nuggetGold", 3), new IngredientStack("wool", 1), new IngredientStack(ItemRegistry.COMPONENT_RADIANTDUST, 1));
 
 		RADIANT_AMPHORA_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("radiant_amphora", new ItemStack(ItemRegistry.RADIANT_AMPHORA), new ItemStack(ItemRegistry.COMPONENT_RADIANTDUST, 4), new ItemStack(Items.CLAY_BALL, 4), new ItemStack(Items.GOLD_NUGGET, 4));
 
@@ -184,13 +184,13 @@ public class RecipeLibrary {
 			STORMWAY_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("stormway", new ItemStack(ItemRegistry.STORMWAY), new ItemStack(ItemRegistry.SHAPED_RADIANT_QUARTZ, 1), new IngredientStack("dyeYellow", 4), new IngredientStack(Ingredient.fromItem(Items.REDSTONE), 16), new IngredientStack(Blocks.IRON_BARS, 8));
 		}
 
-		MATRIX_CORE_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("matrix_core", new ItemStack(BlockRegistry.MATRIX_CRYSTAL_CORE, 1), new ItemStack(ItemRegistry.EMPOWERED_RADIANT_QUARTZ, 12), new IngredientStack("logWood", 12), new ItemStack(ItemRegistry.COMPONENT_SCINTILLATINGINLAY, 12), new IngredientStack(BlockRegistry.RADIANT_LANTERN, 4), new IngredientStack("bookshelf", 4));
+		/*MATRIX_CORE_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("matrix_core", new ItemStack(BlockRegistry.MATRIX_CRYSTAL_CORE, 1), new ItemStack(ItemRegistry.EMPOWERED_RADIANT_QUARTZ, 12), new IngredientStack("logWood", 12), new ItemStack(ItemRegistry.COMPONENT_SCINTILLATINGINLAY, 12), new IngredientStack(BlockRegistry.RADIANT_LANTERN, 4), new IngredientStack("bookshelf", 4));
 
 		MATRIX_STORAGE_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("matrix_storage", new ItemStack(BlockRegistry.MATRIX_STORAGE, 1), new ItemStack(ItemRegistry.COMPONENT_MATRIXBRACE, 2), ItemRegistry.COMPONENT_MATERIALINTERFACE, new ItemStack(ItemRegistry.EMPOWERED_RADIANT_QUARTZ, 6), new ItemStack(BlockRegistry.RADIANT_TROVE, 10));
 
 		MATRIX_REPOSITORY_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("matrix_repository", new ItemStack(BlockRegistry.MATRIX_REPOSITORY, 1), new ItemStack(BlockRegistry.MATRIX_STORAGE, 1), new ItemStack(ItemRegistry.COMPONENT_MATERIALINTERFACE, 2));
 
-		MATRIX_RESERVOIR_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("matrix_reservoir", new ItemStack(BlockRegistry.MATRIX_RESERVOIR, 1), new ItemStack(ItemRegistry.COMPONENT_MATRIXBRACE, 2), ItemRegistry.COMPONENT_CONTAINMENTFIELD, new ItemStack(ItemRegistry.EMPOWERED_RADIANT_QUARTZ, 6), new ItemStack(BlockRegistry.RADIANT_TANK, 10));
+		MATRIX_RESERVOIR_RECIPE = GCTRecipeList.instance.makeAndAddRecipe("matrix_reservoir", new ItemStack(BlockRegistry.MATRIX_RESERVOIR, 1), new ItemStack(ItemRegistry.COMPONENT_MATRIXBRACE, 2), ItemRegistry.COMPONENT_CONTAINMENTFIELD, new ItemStack(ItemRegistry.EMPOWERED_RADIANT_QUARTZ, 6), new ItemStack(BlockRegistry.RADIANT_TANK, 10));*/
 
 		GCTRecipeEvent event = new GCTRecipeEvent(GCTRecipeList.instance);
 		MinecraftForge.EVENT_BUS.post(event);

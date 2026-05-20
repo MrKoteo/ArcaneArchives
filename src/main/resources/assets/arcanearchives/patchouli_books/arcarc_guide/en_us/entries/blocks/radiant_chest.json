@@ -1,0 +1,66 @@
+{
+    "name": "Radiant Chest",
+    "icon": "arcanearchives:radiant_chest",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_chest",
+            "link_recipe": true,
+            "text": "Radiant Chests are a storage container with as many slots as a vanilla double chest in a single block. Each slot of a Radiant Chest can store up to 256 items instead of the stored item's normal stack limit.$(br2)At the bottom of a Radiant Chest's interface, you can give it a name to help keep your"
+        },
+        {
+            "type": "text",
+            "text": "storage organized. Radiant Chests are also a light source."
+        },
+        {
+            "type": "text",
+            "text": "Items stored in Radiant Chests appear on a $(l:items/manifest)Manifest$() as long as the Chest's chunk is loaded.",
+            "title": "Manifest"
+        },
+        {
+            "type": "text",
+            "text": "Using a $(l:items/scepter_manipulation)Scepter of Manipulation$() on a Radiant Chest while holding an item in the other hand allows you to label the chest with the held item. The item is not consumed.$(br2)To clear the item, sneak and activate the chest while holding the Scepter of Manipulation with your main hand and nothing in your off hand.",
+            "title": "Scepter of Manipulation"
+        },
+        {
+            "type": "text",
+            "text": "Using a $(l:items/scepter_revelation)Scepter of Revelation$() on a Radiant Chest will return the chest's name, and how many slots of its inventory are available.",
+            "title": "Scepter of Revelation"
+        },
+        {
+            "type": "text",
+            "text": "In the lower right corner of a Radiant Chest's interface, you can choose how $(l:blocks/brazier_hoarding)Braziers of Hoarding$() route items to the Chest. By default, a Brazier will be capable of routing any item to the chest; if the checkbox is ticked on, only items that already exist within the chest can be routed.",
+            "title": "Brazier of Hoarding"
+        },
+        {
+            "type": "text",
+            "text": "When monitored with a Redstone Comparator, a Radiant Chest outputs a signal based on how full it is (in total items, rather than number of slots filled).",
+            "title": "Redstone Comparator"
+        },
+        {
+            "type": "text",
+            "text": "Radiant Chests can be crafted by using a piece of $(l:items/raw_quartz)Raw Radiant Quartz$() on a chest while sneaking. Any items inside the chest will be imported, and if used on a double vanilla chest, both chests' inventories will be imported into the new Radiant Chest.",
+            "title": "Raw Radiant Quartz"
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:radiant_chest1",
+            "recipe2": "arcanearchives:radiant_chest2",
+            "text": "Radiant Chests can be crafted conventionally."
+        },
+        {
+            "type": "text",
+            "title": "Lore",
+            "text": "$(italics)Upon further examination, the glowing crystalline substance I was imparted with seems to have spatial (temporal?) distortion properties. Further research is required; I have an idea I wish to test out.$(br2)I constructed a frame out of this crystalline substance. Items placed within the frame only seem to be visible$(mdash)and, indeed, existent, if my instruments are to be believed$(mdash) from certain angles of view.$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)I tried to attach wooden panels to the frame to keep the contents within, but they too were subject to this strange spatial distortion.$(br2)Reinforcing the wood with a lacquer ensorcelled with the Stalwart Oak Abjuration seems to prevent the panels from being affected by these distortions.$()$(br2)$(italics)It appears my opinions on the usefulness of the Stalwart Oak Abjuration compared to Infused Wood were incorrect. I believe$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)I owe Etrea a drink.$()$(br2)$(bold)Research Journal of Sharaveda$()$(br)...1665, Autumn's Birth"
+        }
+    ]
+}

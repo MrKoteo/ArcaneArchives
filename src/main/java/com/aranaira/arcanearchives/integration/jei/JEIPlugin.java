@@ -78,9 +78,9 @@ public class JEIPlugin implements IModPlugin {
 		}
 
 		NonNullList<ItemStack> ignores = NonNullList.create();
-		ItemRegistry.CHROMATIC_POWDER.getSubItems(CreativeTabs.SEARCH, ignores);
-		ignores.add(new ItemStack(ItemRegistry.CHROMATIC_POWDER));
-		ignores.add(new ItemStack(ItemRegistry.RAINBOW_CHROMATIC_POWDER));
+		//ItemRegistry.CHROMATIC_POWDER.getSubItems(CreativeTabs.SEARCH, ignores);
+		//ignores.add(new ItemStack(ItemRegistry.CHROMATIC_POWDER));
+		//ignores.add(new ItemStack(ItemRegistry.RAINBOW_CHROMATIC_POWDER));
 
 		itemRegistry.removeIngredientsAtRuntime(VanillaTypes.ITEM, ignores);
 	}

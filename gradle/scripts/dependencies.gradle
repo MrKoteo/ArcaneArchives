@@ -44,7 +44,6 @@ dependencies {
     modImplementation 'curse.maven:patchouli-cryogenic-simulation-edition-1532850:8038012'
     modImplementation 'curse.maven:mysticallib-277064:3483816'
     modImplementation 'CraftTweaker2:CraftTweaker2-MC1120-Main:1.12-4.1.20.715'
-    modImplementation 'curse.maven:guidebook-253874:2989594'
     modImplementation 'curse.maven:thaumcraft-223628:2629023'
     modImplementation 'curse.maven:electroblobs-wizardry-265642:8045455'
     modImplementation 'curse.maven:potion-core-242872:2905184'

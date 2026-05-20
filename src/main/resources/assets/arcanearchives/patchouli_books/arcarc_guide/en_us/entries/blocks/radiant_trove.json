@@ -1,0 +1,27 @@
+{
+    "name": "Radiant Trove",
+    "icon": "arcanearchives:radiant_trove",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_trove",
+            "link_recipe": true,
+            "text": "A Radiant Trove is a storage container that can contain up to 1024 stacks of a single type of item.$(br2)A Radiant Trove's storage capacity can be upgraded three times, using a $(l:items/scepter_manipulation)Scepter of Manipulation$(). The first upgrade increases storage to 3x base capacity, the second to 6x, and the third to 10x."
+        },
+        {
+            "type": "text",
+            "text": "When used as an upgrade, a $(l:items/containment_field)Containment Field$() causes items added to the Trove in excess of its maximum capacity are destroyed.$(br2)$(item)Radiant Key$() When used as an upgrade, a $(l:items/radiant_key)Radiant Key$() locks the type of item in the trove. Once the trove reaches 0 stored items, it will still reserve its storage for the type of item it once held.$(br2)$(item)Scepter of Revelation$() Using a $(l:items/scepter_revelation)Scepter of Revelation$() on a Radiant Trove will return what type of item is stored, its current and maximum capacity, and how many upgrades have been installed.",
+            "title": "Containment Field"
+        },
+        {
+            "type": "text",
+            "text": "Using a $(l:items/scepter_manipulation)Scepter of Manipulation$() on a Radiant Trove opens a GUI that allows you to see and modify what upgrades are installed.$(br2)$(item)Redstone Comparator$() When monitored with a Redstone Comparator, a Radiant Trove outputs a signal based on how full it is.",
+            "title": "Scepter of Manipulation"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:radiant_trove"
+        }
+    ]
+}

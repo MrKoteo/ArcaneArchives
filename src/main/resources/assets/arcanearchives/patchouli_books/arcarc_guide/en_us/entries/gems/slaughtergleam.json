@@ -1,0 +1,18 @@
+{
+    "name": "Slaughtergleam",
+    "icon": "arcanearchives:slaughtergleam",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:slaughtergleam",
+            "link_recipe": true,
+            "text": "A Slaughtergleam is an Arcane Gem formed from a red-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When held, your attacks are considered to have one level of the Looting enchantment. If you are wielding a weapon with the Looting enchantment, its level is increased by one instead.$(br2)To recharge a dun Slaughtergleam, activate the gem while you have a gold nugget in your inventory. The gold nugget is consumed."
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:slaughtergleam"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Networks",
+    "icon": "arcanearchives:manifest",
+    "category": "concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "Every Arcane Archives block you place becomes part of a network. Each block in the network can be accessed by certain items and devices, and ultimately ties back to you. The creation of a network is automatic, and you can only ever belong to one network."
+        },
+        {
+            "type": "text",
+            "text": "By using a $(l:items/letter_invitation)Letter of Invitation$() given to you by another player, you can form a hybrid network with that player, pooling your resources together. Everything in both players' networks is mutually accessible.$(br2)$(item)Letter of Resignation$() By using a $(l:items/letter_resignation)Letter of Resignation$(), you can break from a hybrid network. All blocks that you placed return to your individual network.",
+            "title": "Letter of Invitation"
+        },
+        {
+            "type": "text",
+            "text": "$(l:items/manifest)Manifests$() display the contents of all inventories that are part of the network you belong to.$(br2)$(item)Writ of Expulsion$() By using a $(l:items/writ_expulsion)Writ of Expulsion$() named on an anvil, you can force a player in a hybrid network to leave the network.",
+            "title": "Manifest"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "Mindspindle",
+    "icon": "arcanearchives:mindspindle",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:mindspindle",
+            "link_recipe": true,
+            "text": "A Mindspindle is an Arcane Gem formed from a green-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pampel cut.$(br2)When held, a Mindspindle magnifies the amount of experience contained within experience globes by 50%. It loses one point of charge for each experience point amplified, and can affect an un-amplified total of 800xp before needing to be recharged.$(br2)If you come into contact with a very large number of experience globes while holding a Mindspindle, you can absorb their essence instantly, instead of needing to wait for each globe to be picked up in sequence.$(br2)To recharge a dun Mindspindle, activate the gem while you have a book in your inventory. The book is consumed."
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:mindspindle"
+        }
+    ]
+}

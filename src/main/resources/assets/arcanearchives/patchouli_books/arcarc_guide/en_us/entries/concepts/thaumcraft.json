@@ -1,0 +1,26 @@
+{
+    "name": "Thaumcraft Compatibility",
+    "icon": "thaumcraft:thaumonomicon",
+    "category": "concepts",
+    "flag": "mod:thaumcraft",
+    "pages": [
+        {
+            "type": "text",
+            "title": "Aspects",
+            "text": "$(bold)Aspects$()$(br2)All Arcane Archives items and blocks have registered Thaumcraft aspects. Notably, Radiant Quartz is a source of Praecantatio."
+        },
+        {
+            "type": "spotlight",
+            "item": "thaumcraft:crucible",
+            "text": "$(br2)$(item)Rivertear$() If you have a $(l:gems/rivertear)Rivertear$() somewhere in your inventory (or slotted in a $(l:items/gem_socket)Gem Socket$()), right clicking a Crucible will refill it with water.",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "Crucible"
+        },
+        {
+            "type": "spotlight",
+            "item": "thaumcraft:infusion_matrix",
+            "text": "$(br2)$(item)Raw Quartz Cluster$() $(l:blocks/raw_quartz_cluster)Raw Quartz Clusters$() can be used as an infusion stabilizer.$(br2)$(item)Brazier of Hoarding$() $(l:blocks/brazier_hoarding)Braziers of Hoarding$() can also be used as an infusion stabilizer.",
+            "title": "Infusion"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "name": "Rivertear",
+    "icon": "arcanearchives:rivertear",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:rivertear",
+            "link_recipe": true,
+            "text": "A Rivertear is an Arcane Gem formed from a blue-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pendeloque cut.$(br2)When activated, a Rivertear will conjure a block of water at a distance of up to 40 blocks at the cost of one point of charge.$(br2)To recharge a dun Rivertear, toss it in a block of water."
+        },
+        {
+            "type": "text",
+            "text": "When placed in a Lightwell with access to the sky, a Rivertear generates water at an extremely rapid rate. While it's possible for a Rivertear to shatter, the chances of shattering are astronomically unlikely. For all intents and purposes, a Rivertear lasts indefinitely unless its Lightwell is broken. Once placed in a Lightwell, a Rivertear cannot be retrieved.",
+            "flag": "mod:astralsorcery",
+            "title": "Astral Sorcery Lightwell"
+        },
+        {
+            "type": "text",
+            "text": "If you have a Rivertear somewhere in your inventory (or slotted in a $(l:items/gem_socket)Gem Socket$()), right clicking on a Petal Apothecary will refill it with water.",
+            "flag": "mod:botania",
+            "title": "Botania Petal Apothecary"
+        },
+        {
+            "type": "text",
+            "text": "If you have a Rivertear somewhere in your inventory (or slotted in a $(l:items/gem_socket)Gem Socket$()), right clicking on a Crucible will refill it with water.",
+            "flag": "mod:thaumcraft",
+            "title": "Thaumcraft Crucible"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:rivertear"
+        }
+    ]
+}

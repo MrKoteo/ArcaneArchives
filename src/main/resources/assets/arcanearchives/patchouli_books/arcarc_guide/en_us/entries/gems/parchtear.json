@@ -1,0 +1,18 @@
+{
+    "name": "Parchtear",
+    "icon": "arcanearchives:parchtear",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:parchtear",
+            "link_recipe": true,
+            "text": "A Parchtear is an Arcane Gem formed from a black-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pendeloque cut.$(br2)When activated, the Parchtear destroys a radius 1 cuboid area of fluid. If you are sneaking, it instead destroys a single block of fluid. Each fluid block destroyed consumes a point of charge.$(br2)Once fluid has been destroyed, other fluid is blocked from flowing into the same space for ten seconds.$(br2)To recharge a dun Parchtear, place it in the bucket voiding slot of a $(l:items/devouring_charm)Devouring Charm$()."
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:parchtear"
+        }
+    ]
+}

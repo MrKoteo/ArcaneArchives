@@ -1,0 +1,32 @@
+{
+    "name": "Radiant Crafting Table",
+    "icon": "arcanearchives:radiant_crafting_table",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_crafting_table",
+            "link_recipe": true,
+            "text": "A Radiant Crafting Table acts as a conventional crafting table, except items are not dropped when you leave the interface. Radiant Crafting Tables are also a light source.$(br2)After crafting an item, you can click on one of the slots on the right side of the interface to save the recipe. If enough"
+        },
+        {
+            "type": "text",
+            "text": "items are present in your inventory, clicking on a slot with a saved recipe crafts the item without requiring you to set items on the crafting grid. Shift clicking clears the recipe in a slot."
+        },
+        {
+            "type": "text",
+            "text": "Using a $(l:items/scepter_revelation)Scepter of Revelation$() on a Radiant Crafting Table will return what items are present in the crafting grid.",
+            "title": "Scepter of Revelation"
+        },
+        {
+            "type": "text",
+            "text": "Radiant Crafting Tables can be crafted by using a piece of $(l:items/raw_quartz)Raw Radiant Quartz$() on a vanilla crafting table while sneaking.",
+            "title": "Raw Radiant Quartz"
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:radiant_crafting_table",
+            "text": "Radiant Crafting Tables can be crafted conventionally."
+        }
+    ]
+}

@@ -4,7 +4,6 @@ import com.aranaira.arcanearchives.api.immanence.IImmanenceGenerator;
 import com.aranaira.arcanearchives.api.immanence.IImmanenceSource;
 import com.aranaira.arcanearchives.api.immanence.ImmanenceBonusType;
 import com.aranaira.arcanearchives.immanence.ImmanenceSource;
-import com.aranaira.arcanearchives.init.ItemRegistry;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.util.EnumFacing;
@@ -59,10 +58,8 @@ public class ReverberationChamberTileEntity extends ImmanenceTileEntity implemen
 			this.burnTime--;
 		} else {
 			ItemStack fuel = this.inventory.getStackInSlot(0);
-			if (fuel.getItem() == ItemRegistry.ECHO) {
-				this.burnTime = BURN_TIME;
-				this.burnTimeTotal = BURN_TIME;
-			}
+			this.burnTime = BURN_TIME;
+			this.burnTimeTotal = BURN_TIME;
 		}
 
 		this.defaultServerSideUpdate();

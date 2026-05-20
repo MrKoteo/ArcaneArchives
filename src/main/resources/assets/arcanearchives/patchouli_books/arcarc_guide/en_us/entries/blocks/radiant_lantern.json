@@ -1,0 +1,17 @@
+{
+    "name": "Radiant Lantern",
+    "icon": "arcanearchives:radiant_lantern",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_lantern",
+            "link_recipe": true,
+            "text": "Radiant Lanterns are a light source. They can be placed in any orientation, and will not pop off if the block they're attached to is removed."
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:radiant_lantern"
+        }
+    ]
+}
