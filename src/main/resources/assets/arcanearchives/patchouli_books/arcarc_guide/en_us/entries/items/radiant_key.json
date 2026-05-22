@@ -7,7 +7,12 @@
             "type": "spotlight",
             "item": "arcanearchives:radiant_key",
             "link_recipe": true,
-            "text": "$(item)Trapped Chest$() When held in the main or off hand, you can open a Trapped Chest without the chest firing off a redstone signal.$(br2)$(item)Radiant Trove$() When used to upgrade a $(l:blocks/radiant_trove)Radiant Trove$(), the item type held by the trove becomes fixed. Even if the Trove's internal storage is reduced to 0 items, it reserves its storage for that type of item only."
+            "text": "When held in the main or off hand, you can open a Trapped Chest without the chest firing off a redstone signal."
+        },
+        {
+            "type": "text",
+            "text": "When used to upgrade a $(l:blocks/radiant_trove)Radiant Trove$(), the item type held by the trove becomes fixed. Even if the Trove's internal storage is reduced to 0 items, it reserves its storage for that type of item only.",
+            "title": "Radiant Trove"
         },
         {
             "type": "gct_recipe",

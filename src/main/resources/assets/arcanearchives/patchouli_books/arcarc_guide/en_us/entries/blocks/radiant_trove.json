@@ -11,13 +11,28 @@
         },
         {
             "type": "text",
-            "text": "When used as an upgrade, a $(l:items/containment_field)Containment Field$() causes items added to the Trove in excess of its maximum capacity are destroyed.$(br2)$(item)Radiant Key$() When used as an upgrade, a $(l:items/radiant_key)Radiant Key$() locks the type of item in the trove. Once the trove reaches 0 stored items, it will still reserve its storage for the type of item it once held.$(br2)$(item)Scepter of Revelation$() Using a $(l:items/scepter_revelation)Scepter of Revelation$() on a Radiant Trove will return what type of item is stored, its current and maximum capacity, and how many upgrades have been installed.",
+            "text": "When used as an upgrade, a $(l:items/containment_field)Containment Field$() causes items added to the Trove in excess of its maximum capacity are destroyed.",
             "title": "Containment Field"
         },
         {
             "type": "text",
-            "text": "Using a $(l:items/scepter_manipulation)Scepter of Manipulation$() on a Radiant Trove opens a GUI that allows you to see and modify what upgrades are installed.$(br2)$(item)Redstone Comparator$() When monitored with a Redstone Comparator, a Radiant Trove outputs a signal based on how full it is.",
+            "text": "When used as an upgrade, a $(l:items/radiant_key)Radiant Key$() locks the type of item in the trove. Once the trove reaches 0 stored items, it will still reserve its storage for the type of item it once held.",
+            "title": "Radiant Key"
+        },
+        {
+            "type": "text",
+            "text": "Using a $(l:items/scepter_revelation)Scepter of Revelation$() on a Radiant Trove will return what type of item is stored, its current and maximum capacity, and how many upgrades have been installed.",
+            "title": "Scepter of Revelation"
+        },
+        {
+            "type": "text",
+            "text": "Using a $(l:items/scepter_manipulation)Scepter of Manipulation$() on a Radiant Trove opens a GUI that allows you to see and modify what upgrades are installed.",
             "title": "Scepter of Manipulation"
+        },
+        {
+            "type": "text",
+            "text": "When monitored with a Redstone Comparator, a Radiant Trove outputs a signal based on how full it is.",
+            "title": "Redstone Comparator"
         },
         {
             "type": "gct_recipe",

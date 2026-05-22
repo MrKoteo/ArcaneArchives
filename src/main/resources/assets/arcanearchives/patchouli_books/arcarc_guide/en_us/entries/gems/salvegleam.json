@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:salvegleam",
             "link_recipe": true,
-            "text": "A Salvegleam is an Arcane Gem formed from a pink-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When held and toggled on, the gem will heal you for half a heart approximately once every second if you are hurt. Each half heart consumes a point of charge.$(br2)To recharge a dun Salvegleam, slaughter a passive animal while holding the gem. Doing so restores points of charge equal to half of the animal's maximum health."
+            "text": "A Salvegleam is an Arcane Gem formed from a pink-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When held and toggled on, the gem will heal you for half a heart approximately once every second if you are hurt. Each half heart consumes a point of charge."
+        },
+        {
+            "type": "text",
+            "text": "To recharge a dun Salvegleam, slaughter a passive animal while holding the gem. Doing so restores points of charge equal to half of the animal's maximum health."
         },
         {
             "type": "gct_recipe",

@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:munchstone",
             "link_recipe": true,
-            "text": "A Munchstone is an Arcane Gem formed from a black-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an oval cut.$(br2)When activated, a Munchstone allows you to consume plant-based blocks to restore your hunger and saturation. Charge is consumed for each point of hunger and each point of saturation recovered.$(br2)Please note that the Munchstone devours blocks that are in the world, it does not give you the idea to eat blocks that are in your inventory like conventional food.$(br2)Notably, you can use a Munchstone even if your stomach is full."
+            "text": "A Munchstone is an Arcane Gem formed from a black-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an oval cut.$(br2)When activated, a Munchstone allows you to consume plant-based blocks to restore your hunger and saturation. Charge is consumed for each point of hunger and each point of saturation recovered."
+        },
+        {
+            "type": "text",
+            "text": "Please note that the Munchstone devours blocks that are in the world, it does not give you the idea to eat blocks that are in your inventory like conventional food.$(br2)Notably, you can use a Munchstone even if your stomach is full."
         },
         {
             "type": "text",

@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:cleansegleam",
             "link_recipe": true,
-            "text": "A Cleansegleam is an Arcane Gem formed from a blue-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When activated, a Cleansegleam will purge the user of Hunger, Nausea, and Poison at the cost of a point of charge.$(br2)If activated while sneaking, you can attempt to all targets within three blocks of you of these effects instead."
+            "text": "A Cleansegleam is an Arcane Gem formed from a blue-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When activated, a Cleansegleam will purge the user of Hunger, Nausea, and Poison at the cost of a point of charge."
+        },
+        {
+            "type": "text",
+            "text": "If activated while sneaking, you can attempt to all targets within three blocks of you of these effects instead."
         },
         {
             "type": "text",

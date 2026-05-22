@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:rivertear",
             "link_recipe": true,
-            "text": "A Rivertear is an Arcane Gem formed from a blue-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pendeloque cut.$(br2)When activated, a Rivertear will conjure a block of water at a distance of up to 40 blocks at the cost of one point of charge.$(br2)To recharge a dun Rivertear, toss it in a block of water."
+            "text": "A Rivertear is an Arcane Gem formed from a blue-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pendeloque cut.$(br2)When activated, a Rivertear will conjure a block of water at a distance of up to 40 blocks at the cost of one point of charge.$(br2)To recharge a dun Rivertear,"
+        },
+        {
+            "type": "text",
+            "text": "toss it in a block of water."
         },
         {
             "type": "text",

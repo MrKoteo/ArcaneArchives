@@ -7,7 +7,7 @@
         {
             "type": "spotlight",
             "item": "minecraft:potion",
-            "text": "$(br2)$(item)Cleansegleam$() A $(l:gems/cleansegleam)Cleansegleam$() applies the Antidote effect when used.",
+            "text": "$(bold)Cleansegleam$() A $(l:gems/cleansegleam)Cleansegleam$() applies the Antidote effect when used.",
             "flag": "arcanearchives:arsenal_enabled",
             "title": "Effects"
         }

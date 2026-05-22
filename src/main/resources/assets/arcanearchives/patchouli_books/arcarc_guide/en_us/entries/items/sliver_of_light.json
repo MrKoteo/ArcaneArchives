@@ -7,7 +7,11 @@
 			"type": "spotlight",
 			"item": "arcanearchives:quartz_sliver",
 			"link_recipe": true,
-			"text": "Slivers of Light are a light source, and an alternative to torches. Unlike torches, they can be placed on the bottom surface of blocks, and are not broken by fluids.$(br2)$(item)Stone$() Slivers of Light can be crafted by bashing a piece of $(l:items/raw_quartz)Raw Radiant Quartz$() against another block. Each bash has a 40% chance of creating a single sliver, and a 20% chance of creating a handful of slivers but destroying the piece of Raw Radiant Quartz."
-		}
+			"text": "Slivers of Light are a light source, and an alternative to torches. Unlike torches, they can be placed on the bottom surface of blocks, and are not broken by fluids."
+		},
+        {
+            "type": "text",
+            "text": "Slivers of Light can be crafted by bashing a piece of $(l:items/raw_quartz)Raw Radiant Quartz$() against another block. Each bash has a 40% chance of creating a single sliver, and a 20% chance of creating a handful of slivers but destroying the piece of Raw Radiant Quartz."
+        }
 	]
 }

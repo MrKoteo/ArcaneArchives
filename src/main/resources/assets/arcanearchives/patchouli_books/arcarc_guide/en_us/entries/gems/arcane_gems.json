@@ -10,7 +10,11 @@
 		},
 		{
 			"type": "text",
-			"text": "The shape of an Arcane Gem is an indicator of the nature of its function.$(br2)$(bold)Asscher cut:$() Gems with an Asscher cut generally affect entities in some way.$(br2)$(bold)Oval cut:$() Gems with an Oval cut generally affect blocks or items in some way.$(br2)$(bold)Pampel cut:$() Gems with a Pampel cut have strange or difficult to categorize effects.$(br2)$(bold)Pendeloque cut:$() Gems with a Pendeloque cut generally affect fluids in some way.$(br2)$(bold)Trillion cut:$() Gems with a Trillion cut generally affect energy in some way."
-		}
+			"text": "The shape of an Arcane Gem is an indicator of the nature of its function.$(br2)$(bold)Asscher cut:$() Gems with an Asscher cut generally affect entities in some way.$(br2)$(bold)Oval cut:$() Gems with an Oval cut generally affect blocks or items in some way.$(br2)$(bold)Pampel cut:$() Gems with a Pampel cut have strange or difficult to categorize effects."
+		},
+        {
+            "type": "text",
+            "text": "$(bold)Pendeloque cut:$() Gems with a Pendeloque cut generally affect fluids in some way.$(br2)$(bold)Trillion cut:$() Gems with a Trillion cut generally affect energy in some way."
+        }
 	]
 }

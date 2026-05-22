@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:agegleam",
             "link_recipe": true,
-            "text": "An Agegleam is an Arcane Gem formed from a green-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When activated, the amount of time until nearby animals grow up will be significantly reduced, at the cost of charge for each animal affected.$(br2)To recharge a dun Agegleam, simply hold onto it. It regains one point of charge every three minutes."
+            "text": "An Agegleam is an Arcane Gem formed from a green-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in an asscher cut.$(br2)When activated, the amount of time until nearby animals grow up will be significantly reduced, at the cost of charge for each animal affected."
+        },
+        {
+            "type": "text",
+            "text": "To recharge a dun Agegleam, simply hold onto it. It regains one point of charge every three minutes."
         },
         {
             "type": "gct_recipe",

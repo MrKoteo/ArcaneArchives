@@ -13,7 +13,11 @@
         {
             "type": "text",
             "title": "Transformations",
-            "text": "The following transformation sequences can be performed:$(br2)Sand $(arrow) Coarse Dirt $(arrow) Dirt $(arrow) Mycelium $(arrow) Podzol $(arrow) Grass Block$(br2)Gravel $(arrow) Cobblestone $(arrow) Stone$(br2)Mossy Cobblestone $(arrow) Cobblestone $(arrow) Stone$(br2)Cracked Stone Bricks $(arrow) Stone Bricks $(arrow) Chiseled Stone Bricks$(br2)Mossy Stone Bricks $(arrow) Stone Bricks $(arrow) Chiseled Stone Bricks$(br2)Damaged Anvil $(arrow) Slightly Damaged Anvil $(arrow) Anvil$(br2)Furnace $(arrow) Lit Furnace"
+            "text": "The following transformation sequences can be performed:$(br2)Sand -> Coarse Dirt -> Dirt -> Mycelium -> Podzol -> Grass Block$(br2)Gravel -> Cobblestone -> Stone$(br2)Mossy Cobblestone -> Cobblestone -> Stone"
+        },
+        {
+            "type": "text",
+            "text": "Cracked Stone Bricks -> Stone Bricks -> Chiseled Stone Bricks$(br2)Mossy Stone Bricks -> Stone Bricks -> Chiseled Stone Bricks$(br2)Damaged Anvil -> Slightly Damaged Anvil -> Anvil$(br2)Furnace -> Lit Furnace"
         },
         {
             "type": "gct_recipe",

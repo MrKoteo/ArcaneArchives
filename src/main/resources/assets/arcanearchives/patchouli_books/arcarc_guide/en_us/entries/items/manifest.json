@@ -7,17 +7,30 @@
             "type": "spotlight",
             "item": "arcanearchives:manifest",
             "link_recipe": true,
-            "text": "A Manifest lists all items stored within loaded Radiant Storage in one single list.$(br2)By hovering over a slot, you can get a list of each location that the item is stored at, including names of Radiant Chests. By clicking on the slot, you can track the locations of each of these items, drawing a line from your current position to the target inventories (as long as a target inventory is in the same dimension).$(br2)Activating a tracked inventory container disables the line, as does hitting the $(ldquo)End Tracking$(rdquo) button at the bottom of the Manifest's interface."
+            "text": "A Manifest lists all items stored within loaded Radiant Storage in one single list.$(br2)By hovering over a slot, you can get a list of each location that the item is stored at, including names of Radiant Chests. By clicking on the slot, you can track the locations of each of these items, drawing a line from your"
         },
         {
             "type": "text",
-            "text": "You can filter what items your Manifest displays by typing in the search bar. Right clicking the search bar clears the current term. You can also shift-click the search bar to copy your current JEI search term.$(br2)$(bold)Sorting Toggle:$() The first button toggles whether items are sorted by name or by quantity.$(br2)$(bold)Order Toggle:$() The second button toggles whether items are sorted in ascending or descending order.",
+            "text": "current position to the target inventories (as long as a target inventory is in the same dimension).$(br2)Activating a tracked inventory container disables the line, as does hitting the $(ldquo)End Tracking$(rdquo) button at the bottom of the Manifest's interface."
+        },
+        {
+            "type": "text",
+            "text": "You can filter what items your Manifest displays by typing in the search bar. Right clicking the search bar clears the current term. You can also shift-click the search bar to copy your current JEI search term.$(br2)$(bold)Sorting Toggle:$() The first button toggles whether items are sorted by name or by quantity.$(br2)$(bold)Order Toggle:$() The second",
             "title": "Search Bar:"
         },
         {
             "type": "text",
-            "text": "The third button toggles whether the search bar syncs with your JEI search term or not.$(br2)$(item)Monitoring Crystal$() Items in non-Radiant storage can be added to the Manifest by attaching a $(l:blocks/monitoring_crystal)Monitoring Crystal$() to its storage container.",
+            "text": "button toggles whether items are sorted in ascending or descending order."
+        },
+        {
+            "type": "text",
+            "text": "The third button toggles whether the search bar syncs with your JEI search term or not.",
             "title": "JEI Sync:"
+        },
+        {
+            "type": "text",
+            "text": "Items in non-Radiant storage can be added to the Manifest by attaching a $(l:blocks/monitoring_crystal)Monitoring Crystal$() to its storage container.",
+            "title": "Monitoring Crystal"
         },
         {
             "type": "gct_recipe",

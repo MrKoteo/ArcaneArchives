@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:phoenixway",
             "link_recipe": true,
-            "text": "A Phoenixway is an Arcane Gem formed from an orange-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a trillion cut.$(br2)When activated, a Phoenixway will light a fire at a distance of up to 40 blocks at the cost of one point of charge.$(br2)If you're about to take fire damage while holding a Phoenixway, it will block the damage and grant 30 seconds of Fire Resistance at the cost of twelve points of charge.$(br2)To recharge a dun Phoenixway, activate the gem while you have gunpowder in your inventory. Three pieces of gunpowder are necessary to fully refill the gem, and if you have less than three pieces the gem will only be partially recharged. The gunpowder is consumed."
+            "text": "A Phoenixway is an Arcane Gem formed from an orange-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a trillion cut.$(br2)When activated, a Phoenixway will light a fire at a distance of up to 40 blocks at the cost of one point of charge.$(br2)If you're about to take fire"
+        },
+        {
+            "type": "text",
+            "text": "damage while holding a Phoenixway, it will block the damage and grant 30 seconds of Fire Resistance at the cost of twelve points of charge.$(br2)To recharge a dun Phoenixway, activate the gem while you have gunpowder in your inventory. Three pieces of gunpowder are necessary to fully refill the gem, and if you have less than three pieces the gem will only be partially recharged. The gunpowder is consumed."
         },
         {
             "type": "gct_recipe",

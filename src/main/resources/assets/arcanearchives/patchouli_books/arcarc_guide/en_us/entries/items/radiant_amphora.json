@@ -7,12 +7,16 @@
             "type": "spotlight",
             "item": "arcanearchives:radiant_amphora",
             "link_recipe": true,
-            "text": "$(item)Radiant Tank$() A Radiant Amphora acts as a long distance connection to a specific $(l:blocks/radiant_tank)Radiant Tank$(). You can bind a Radiant Amphora to a Radiant Tank by using the amphora on the desired tank while sneaking. The amphora will become colorized to signify that a connection was made."
+            "text": "A Radiant Amphora acts as a long distance connection to a specific $(l:blocks/radiant_tank)Radiant Tank$(). You can bind a Radiant Amphora to a Radiant Tank by using the amphora on the desired tank while sneaking. The amphora will become colorized to signify that a connection was made."
         },
         {
             "type": "text",
-            "text": "While in Fill mode, picking up fluid directly places it into the linked Radiant Tank.$(br2)$(bold)Empty Mode:$() When in Empty mode, fluid is removed from the linked Radiant Tank and placed at the target point.$(br2)You can switch the Radiant Amphora's current mode by left clicking the air.$(br2)$(item)Dispenser$() A Radiant Amphora placed in a Dispenser will attempt to place fluid from its linked tank if the space in front of the Dispenser is empty. If the space in front of the Dispenser has a fluid block, the Amphora will instead attempt to pick it up and send it to its linked tank.",
-            "title": "Fill Mode:"
+            "text": "$(bold)Fill Mode:$()While in Fill mode, picking up fluid directly places it into the linked Radiant Tank.$(br2)$(bold)Empty Mode:$() When in Empty mode, fluid is removed from the linked Radiant Tank and placed at the target point.$(br2)You can switch the Radiant Amphora's current mode by left clicking the air."
+        },
+        {
+            "type": "text",
+            "text": "A Radiant Amphora placed in a Dispenser will attempt to place fluid from its linked tank if the space in front of the Dispenser is empty. If the space in front of the Dispenser has a fluid block, the Amphora will instead attempt to pick it up and send it to its linked tank.",
+            "title": "Dispenser"
         },
         {
             "type": "gct_recipe",

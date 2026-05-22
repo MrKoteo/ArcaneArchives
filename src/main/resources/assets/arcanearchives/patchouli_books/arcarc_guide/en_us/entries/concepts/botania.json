@@ -7,7 +7,7 @@
         {
             "type": "spotlight",
             "item": "botania:altar",
-            "text": "$(br2)$(item)Rivertear$() If you have a $(l:gems/rivertear)Rivertear$() somewhere in your inventory (or slotted in a $(l:items/gem_socket)Gem Socket$()), right clicking a Petal Apothecary will refill it with water.",
+            "text": "$(br2)$(bold)Rivertear$() If you have a $(l:gems/rivertear)Rivertear$() somewhere in your inventory (or slotted in a $(l:items/gem_socket)Gem Socket$()), right clicking a Petal Apothecary will refill it with water.",
             "flag": "arcanearchives:arsenal_enabled",
             "title": "Petal Apothecary"
         }

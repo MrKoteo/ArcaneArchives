@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:elixirspindle",
             "link_recipe": true,
-            "text": "An Elixirspindle is an Arcane Gem formed from a purple-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pampel cut.$(br2)When held, you can use potions, splash potions, and lingering potions without consuming them at the cost of one point of charge. Additionally, if you use a potion you do not need to drink it and instead benefit from its effects immediately.$(br2)To recharge a dun Elixirspindle, activate the gem while you have nether wart in your inventory. Five pieces of nether wart are necessary to fully refill the gem, and if you have less than five pieces the gem will only be partially recharged. The nether wart is consumed."
+            "text": "An Elixirspindle is an Arcane Gem formed from a purple-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pampel cut.$(br2)When held, you can use potions, splash potions, and lingering potions without consuming them at the cost of one point of charge. Additionally, if you use a potion you do not need to"
+        },
+        {
+            "type": "text",
+            "text": "drink it and instead benefit from its effects immediately.$(br2)To recharge a dun Elixirspindle, activate the gem while you have nether wart in your inventory. Five pieces of nether wart are necessary to fully refill the gem, and if you have less than five pieces the gem will only be partially recharged. The nether wart is consumed."
         },
         {
             "type": "gct_recipe",

@@ -8,7 +8,11 @@
             "type": "spotlight",
             "item": "arcanearchives:mountaintear",
             "link_recipe": true,
-            "text": "A Mountaintear is an Arcane Gem formed from an orange-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pendeloque cut.$(br2)When activated, a Mountaintear will conjure a block of lava at a distance of up to 40 blocks at the cost of one point of charge.$(br2)To recharge a dun Mountaintear, toss it in a block of lava."
+            "text": "A Mountaintear is an Arcane Gem formed from an orange-spectrum piece of $(l:items/shaped_quartz)Shaped Radiant Quartz$() in a pendeloque cut.$(br2)When activated, a Mountaintear will conjure a block of lava at a distance of up to 40 blocks at the cost of one point of charge."
+        },
+        {
+            "type": "text",
+            "text": "To recharge a dun Mountaintear, toss it in a block of lava."
         },
         {
             "type": "text",
