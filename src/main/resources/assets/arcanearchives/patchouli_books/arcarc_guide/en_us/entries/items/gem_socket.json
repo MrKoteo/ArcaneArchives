@@ -1,6 +1,7 @@
 {
     "name": "Gem Socket",
     "icon": "arcanearchives:gemsocket",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "flag": "arcanearchives:arsenal_enabled",
     "pages": [

@@ -1,6 +1,7 @@
 {
     "name": "Letter of Invitation",
     "icon": "arcanearchives:letter_invitation",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

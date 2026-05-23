@@ -1,6 +1,7 @@
 {
     "name": "Devouring Charm",
     "icon": "arcanearchives:devouring_charm",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

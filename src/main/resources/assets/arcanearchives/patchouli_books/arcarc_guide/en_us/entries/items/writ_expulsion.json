@@ -1,6 +1,7 @@
 {
     "name": "Writ of Expulsion",
     "icon": "arcanearchives:writ_expulsion",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

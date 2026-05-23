@@ -1,6 +1,7 @@
 {
 	"name": "Shaped Radiant Quartz",
 	"icon": "arcanearchives:shaped_quartz",
+    "advancement": "arcanearchives:gemcutters_table",
 	"category": "items",
 	"pages": [
 		{

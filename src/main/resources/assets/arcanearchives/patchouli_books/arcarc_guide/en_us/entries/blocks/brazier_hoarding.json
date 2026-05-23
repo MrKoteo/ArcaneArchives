@@ -1,6 +1,7 @@
 {
     "name": "Brazier of Hoarding",
     "icon": "arcanearchives:brazier_of_hoarding",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "blocks",
     "pages": [
         {

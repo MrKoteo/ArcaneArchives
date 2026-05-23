@@ -1,6 +1,7 @@
 {
     "name": "Radiant Tank",
     "icon": "arcanearchives:radiant_tank",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "blocks",
     "pages": [
         {

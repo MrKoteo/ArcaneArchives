@@ -1,6 +1,7 @@
 {
     "name": "Scepter of Revelation",
     "icon": "arcanearchives:scepter_revelation",
+    "advancement": "arcanearchives:raw_quartz",
     "category": "items",
     "pages": [
         {

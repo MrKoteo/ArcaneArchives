@@ -1,6 +1,7 @@
 {
     "name": "Radiant Trove",
     "icon": "arcanearchives:radiant_trove",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "blocks",
     "pages": [
         {

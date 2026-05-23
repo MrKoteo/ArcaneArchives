@@ -1,6 +1,7 @@
 {
 	"name": "Sliver of Light",
 	"icon": "arcanearchives:quartz_sliver",
+    "advancement": "arcanearchives:raw_quartz",
 	"category": "items",
 	"pages": [
 		{

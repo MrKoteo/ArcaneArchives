@@ -1,6 +1,7 @@
 {
 	"name": "Manifest Lectern",
 	"icon": "arcanearchives:lectern_manifest",
+    "advancement": "arcanearchives:manifest",
 	"category": "blocks",
 	"pages": [
 		{

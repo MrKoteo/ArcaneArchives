@@ -1,6 +1,7 @@
 {
     "name": "Scepter of Manipulation",
     "icon": "arcanearchives:scepter_manipulation",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

@@ -1,6 +1,7 @@
 {
     "name": "Radiant Lantern",
     "icon": "arcanearchives:radiant_lantern",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "blocks",
     "pages": [
         {

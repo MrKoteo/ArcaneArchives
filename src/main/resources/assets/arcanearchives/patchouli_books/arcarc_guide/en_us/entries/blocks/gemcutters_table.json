@@ -1,6 +1,7 @@
 {
     "name": "Gem Cutter's Table",
     "icon": "arcanearchives:gemcutters_table",
+    "advancement": "arcanearchives:raw_quartz",
     "category": "blocks",
     "pages": [
         {

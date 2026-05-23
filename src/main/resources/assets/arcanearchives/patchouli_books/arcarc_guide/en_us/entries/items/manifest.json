@@ -1,6 +1,7 @@
 {
     "name": "Manifest",
     "icon": "arcanearchives:manifest",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

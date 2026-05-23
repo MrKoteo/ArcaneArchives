@@ -1,6 +1,7 @@
 {
     "name": "Radiant Key",
     "icon": "arcanearchives:radiant_key",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

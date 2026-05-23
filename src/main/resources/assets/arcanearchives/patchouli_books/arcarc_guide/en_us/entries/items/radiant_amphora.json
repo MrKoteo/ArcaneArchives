@@ -1,6 +1,7 @@
 {
     "name": "Radiant Amphora",
     "icon": "arcanearchives:radiant_amphora",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

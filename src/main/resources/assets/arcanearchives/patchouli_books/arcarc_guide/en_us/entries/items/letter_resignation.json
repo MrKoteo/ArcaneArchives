@@ -1,6 +1,7 @@
 {
     "name": "Letter of Resignation",
     "icon": "arcanearchives:letter_resignation",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "items",
     "pages": [
         {

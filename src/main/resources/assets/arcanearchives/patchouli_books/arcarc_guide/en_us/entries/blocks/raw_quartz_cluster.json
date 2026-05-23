@@ -1,6 +1,7 @@
 {
 	"name": "Raw Quartz Cluster",
 	"icon": "arcanearchives:raw_quartz_cluster",
+    "advancement": "arcanearchives:raw_quartz",
 	"category": "blocks",
 	"pages": [
 		{

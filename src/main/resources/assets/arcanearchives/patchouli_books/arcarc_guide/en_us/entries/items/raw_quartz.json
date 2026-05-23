@@ -1,6 +1,7 @@
 {
     "name": "Raw Radiant Quartz",
     "icon": "arcanearchives:raw_quartz",
+    "advancement": "arcanearchives:resonator",
     "category": "items",
     "pages": [
         {

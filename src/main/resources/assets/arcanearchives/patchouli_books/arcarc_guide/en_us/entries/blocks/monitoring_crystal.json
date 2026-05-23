@@ -1,6 +1,7 @@
 {
     "name": "Monitoring Crystal",
     "icon": "arcanearchives:monitoring_crystal",
+    "advancement": "arcanearchives:gemcutters_table",
     "category": "blocks",
     "pages": [
         {

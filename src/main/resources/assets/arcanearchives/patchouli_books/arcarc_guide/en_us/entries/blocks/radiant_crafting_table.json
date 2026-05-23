@@ -1,6 +1,7 @@
 {
     "name": "Radiant Crafting Table",
     "icon": "arcanearchives:radiant_crafting_table",
+    "advancement": "arcanearchives:raw_quartz",
     "category": "blocks",
     "pages": [
         {

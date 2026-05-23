@@ -3,6 +3,7 @@
     "icon": "arcanearchives:parchtear",
     "category": "gems",
     "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
     "pages": [
         {
             "type": "spotlight",

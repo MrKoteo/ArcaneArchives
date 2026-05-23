@@ -1,6 +1,7 @@
 {
     "name": "Radiant Chest",
     "icon": "arcanearchives:radiant_chest",
+    "advancement": "arcanearchives:raw_quartz",
     "category": "blocks",
     "pages": [
         {
