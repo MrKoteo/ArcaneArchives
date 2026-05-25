@@ -69,7 +69,7 @@ public class ItemRegistry {
 	//public static final SerenityCharmItem SERENITY_CHARM = new SerenityCharmItem();
 
 	//ARCANE GEMS
-	public static final FabrialItem FABRIAL = new FabrialItem();
+	//public static final FabrialItem FABRIAL = new FabrialItem();
 
 	public static final Slaughtergleam SLAUGHTERGLEAM = new Slaughtergleam();
 	public static final MurdergleamItem MURDERGLEAM = new MurdergleamItem();
