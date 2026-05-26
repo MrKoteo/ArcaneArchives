@@ -1,0 +1,47 @@
+{
+    "name": "辉耀储罐",
+    "icon": "arcanearchives:radiant_tank",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_tank",
+            "link_recipe": true,
+            "text": "辉耀储罐是一种存储容器，可储存多达16桶的单种流体。对流体容器使用辉耀储罐会将目标中的流体转移到手持的辉耀储罐中。"
+        },
+        {
+            "type": "text",
+            "text": "辉耀储罐的存储容量可以升级三次，需要使用$(l:items/scepter_manipulation)操纵权杖$()。第一次升级将容量提升至基础容量的3倍，第二次至6倍，第三次至10倍。"
+        },
+        {
+            "type": "text",
+            "text": "当作为升级组件使用时，$(l:items/containment_field)容纳场$()会使超过储罐最大容量的多余流体被销毁。",
+            "title": "容纳场"
+        },
+        {
+            "type": "text",
+            "text": "$(l:items/radiant_amphora)辉耀之瓶$()可以在任意位置向辉耀储罐注入或抽取流体，只要储罐位于已加载的区块中。",
+            "title": "辉耀之瓶"
+        },
+        {
+            "type": "text",
+            "text": "对辉耀储罐使用$(l:items/scepter_revelation)启示权杖$()会返回其中存储的流体类型、当前容量、最大容量以及已安装的升级数量。",
+            "title": "启示权杖"
+        },
+        {
+            "type": "text",
+            "text": "对辉耀储罐使用$(l:items/scepter_manipulation)操纵权杖$()会打开一个GUI，允许你查看和修改已安装的升级。",
+            "title": "操纵权杖"
+        },
+        {
+            "type": "text",
+            "text": "当用红石比较器检测时，辉耀储罐会根据其装满程度输出信号。",
+            "title": "红石比较器"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:radiant_tank"
+        }
+    ]
+}

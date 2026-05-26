@@ -1,0 +1,21 @@
+{
+	"name": "奥术宝石",
+	"icon": "arcanearchives:slaughtergleam",
+	"category": "gems",
+	"flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+	"pages": [
+		{
+			"type": "text",
+			"text": "奥术宝石是经过特殊切割的辉耀石英碎片，经过改造使其仅发出特定颜色的光芒。每颗宝石都有独特的魔法属性，详情见各自的页面。$(br2)$(bold)请注意，所有奥术宝石的配方都是临时的。$()未来奥术宝石将无法在$(l:blocks/gemcutters_table)宝石切割台$()上制作。"
+		},
+		{
+			"type": "text",
+			"text": "奥术宝石的形状是其功能性质的指示。$(br2)$(bold)阿斯切：$()阿斯切切割的宝石通常以某种方式影响实体。$(br2)$(bold)椭圆切：$()椭圆切切割的宝石通常以某种方式影响方块或物品。$(br2)$(bold)潘佩尔切：$()潘佩尔切切割的宝石具有奇特或难以归类的效果。"
+		},
+        {
+            "type": "text",
+            "text": "$(bold)梨形切：$()梨形切切割的宝石通常以某种方式影响流体。$(br2)$(bold)三角切：$()三角切切割的宝石通常以某种方式影响能量。"
+        }
+	]
+}

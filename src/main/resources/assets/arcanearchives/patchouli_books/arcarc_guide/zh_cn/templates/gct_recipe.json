@@ -1,0 +1,60 @@
+{
+  "processor": "com.aranaira.arcanearchives.integration.patchouli.GCTRecipeProcessor",
+  "components": [
+    {
+      "type": "header",
+      "text": "GCT Recipe",
+      "x": -1,
+      "y": 0
+    },
+    {
+      "type": "item",
+      "item": "#item0",
+      "x": 8,
+      "y": 25,
+      "framed": true
+    },
+    {
+      "type": "item",
+      "item": "#item1",
+      "x": 33,
+      "y": 25,
+      "framed": true
+    },
+    {
+      "type": "item",
+      "item": "#item2",
+      "x": 58,
+      "y": 25,
+      "framed": true
+    },
+    {
+      "type": "item",
+      "item": "#item3",
+      "x": 8,
+      "y": 50,
+      "framed": true
+    },
+    {
+      "type": "item",
+      "item": "#item4",
+      "x": 33,
+      "y": 50,
+      "framed": true
+    },
+    {
+      "type": "item",
+      "item": "#item5",
+      "x": 58,
+      "y": 50,
+      "framed": true
+    },
+    {
+      "type": "item",
+      "item": "#result",
+      "x": 92,
+      "y": 33,
+      "framed": true
+    }
+  ]
+}

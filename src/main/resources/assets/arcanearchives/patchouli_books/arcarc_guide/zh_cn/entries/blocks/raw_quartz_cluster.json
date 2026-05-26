@@ -1,0 +1,20 @@
+{
+	"name": "石英原石簇",
+	"icon": "arcanearchives:raw_quartz_cluster",
+    "advancement": "arcanearchives:raw_quartz",
+	"category": "blocks",
+	"pages": [
+		{
+			"type": "spotlight",
+			"item": "arcanearchives:raw_quartz_cluster",
+			"link_recipe": true,
+			"text": "石英原石簇是一种光源。使用带有精准采集附魔的镐子可以采集它们；否则破坏石英原石簇会掉落一块$(l:items/raw_quartz)辉耀石英原石$()。$(br2)$(item)神秘时代$()石英原石簇可用作注魔稳定器。",
+			"flag": "mod:thaumcraft"
+		},
+		{
+			"type": "relations",
+			"entries": ["blocks/radiant_resonator"],
+			"text": "石英原石簇会在$(l:blocks/radiant_resonator)辉耀谐振台$()上方随时间生成。"
+		}
+	]
+}

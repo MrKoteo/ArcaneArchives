@@ -1,4 +1,6 @@
 itemGroup.arcanearchives=Arcane Archives
+arcanearchives.book.name=Tome of Arcana
+arcanearchives.book.landing_text=This tome contains everything you need to know about Arcane Archives, from the basic principles of Radiant Quartz to advanced devices and Arcane Gems.
 
 item.raw_quartz.name=Raw Radiant Quartz
 item.shaped_quartz.name=Shaped Radiant Quartz
@@ -231,6 +233,10 @@ arcanearchives.tooltip.item.letter_resignation=Allows you to leave an Arcane Net
 arcanearchives.tooltip.item.material_interface=A crafting ingredient. Can also be used as a second tier upgrade for Radiant Troves.
 arcanearchives.tooltip.item.matrix_brace=A crafting ingredient. Can also be used as a first tier upgrade for Radiant Tanks and Radiant Troves.
 arcanearchives.tooltip.item.manifest=Used to view items stored in Radiant storage.
+arcanearchives.tooltip.item.manifest.open=Right-Click to open the manifest.
+arcanearchives.tooltip.item.manifest.open.key=Right-Click or %s to open the manifest.
+arcanearchives.tooltip.item.manifest.clear=Sneak-Right-Click to clear inventory tracking.
+arcanearchives.tooltip.item.manifest.clear.key=Sneak-Right-Click or Sneak-%s to clear inventory tracking.
 arcanearchives.tooltip.item.quartz_sliver=An alternative to torches. Acquire by smashing Radiant Quartz against stone.
 arcanearchives.tooltip.item.radiant_amphora=Used to transfer fluids to and from a Radiant Tank or Reservoir Matrix.
 arcanearchives.tooltip.item.radiant_dust=A crafting ingredient.

@@ -1,0 +1,41 @@
+{
+    "name": "河之泪",
+    "icon": "arcanearchives:rivertear",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:rivertear",
+            "link_recipe": true,
+            "text": "河之泪是一种奥术宝石，由蓝色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以梨形切切割而成。$(br2)激活时，河之泪会在最远40格的距离处召唤一块水，消耗一点充能。$(br2)要为耗尽的河之泪充能，"
+        },
+        {
+            "type": "text",
+            "text": "将其丢入水中。"
+        },
+        {
+            "type": "text",
+            "text": "当放置在有天空视野的光井中时，河之泪会以极快的速度产生水。虽然河之泪有可能碎裂，但碎裂的概率微乎其微。实际上，河之泪可以无限期使用，除非其光井被破坏。一旦放入光井，河之泪无法取回。",
+            "flag": "mod:astralsorcery",
+            "title": "星辉魔法光井"
+        },
+        {
+            "type": "text",
+            "text": "如果你的物品栏中某处有河之泪（或插在$(l:items/gem_socket)宝石槽$()中），右键点击花瓣炼药锅会将其注满水。",
+            "flag": "mod:botania",
+            "title": "植物魔法花瓣炼药锅"
+        },
+        {
+            "type": "text",
+            "text": "如果你的物品栏中某处有河之泪（或插在$(l:items/gem_socket)宝石槽$()中），右键点击炼药锅会将其注满水。",
+            "flag": "mod:thaumcraft",
+            "title": "神秘时代炼药锅"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:rivertear"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "奥术宝石充能",
+    "icon": "arcanearchives:salvegleam",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "text",
+            "text": "大多数奥术宝石都有一个内部的能量储存，称为$(bold)充能$()。当宝石的充能耗尽时，它会变成$(bold)耗尽$()状态，无法使用直到被充能。当宝石耗尽时，你可以尝试为其充能，通常是在手持时激活耗尽的宝石。每颗宝石都有独特的充能方法，详见其各自页面。"
+        },
+        {
+            "type": "text",
+            "text": "放置在$(l:items/gem_socket)宝石槽$()中的宝石在耗尽时会尝试自动充能一次。",
+            "title": "宝石槽"
+        }
+    ]
+}

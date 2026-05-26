@@ -1,0 +1,45 @@
+{
+    "name": "辉耀谐振台",
+    "icon": "arcanearchives:radiant_resonator",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_resonator",
+            "link_recipe": true,
+            "text": "辉耀谐振台每隔五分钟会在自身上方的一个方块位置生成一个辉耀石英原石簇。石英生成后，过程将暂停，直到共振器上方的方块被清空。$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "你最多只能放置三个辉耀谐振台。任何额外尝试放置的共振器都会掉落，而通过自动化手段放置的共振器会自行销毁。$(br2)即使区块已加载，辉耀谐振台也只会在你在线时运行。"
+        },
+        {
+            "type": "text",
+            "text": "对辉耀谐振台使用$(l:items/scepter_revelation)启示权杖$()会返回其当前进度以及是否正在运行。",
+            "title": "启示权杖"
+        },
+        {
+            "type": "text",
+            "text": "当用红石比较器检测时，辉耀谐振台会根据其生成新$(l:blocks/raw_quartz_cluster)石英原石簇$()的进度输出信号。",
+            "title": "红石比较器"
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:radiant_resonator",
+            "text": "辉耀谐振台可以通过常规方式合成。"
+        },
+        {
+            "type": "image",
+            "images": [
+                "arcanearchives:textures/gui/guidebook/lore_resonator.png"
+            ],
+            "title": "背景故事",
+            "border": false,
+            "text": "$(bold)发现于已故者莎拉维达的笔记中$()$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "...由特雷林（死者前学徒）所作的注释$(br2)...1672年，冬初"
+        }
+    ]
+}

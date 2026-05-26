@@ -1,0 +1,23 @@
+{
+    "name": "宝石切割台",
+    "icon": "arcanearchives:gemcutters_table",
+    "advancement": "arcanearchives:raw_quartz",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:gemcutters_table",
+            "link_recipe": true,
+            "text": "宝石切割台是一种制作站，用于将辉耀石英原石精炼为刻面辉耀石英。需要精细工艺的物品通常都在宝石切割台上制作。$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "与传统合成不同，宝石切割台的配方没有形状要求。选择所需物品后，只要材料足够，你就可以直接从输出槽中取出物品。"
+        },
+        {
+            "type": "text",
+            "text": "宝石切割台的内部物品栏可以通过$(l:blocks/brazier_hoarding)囤积火盆$()进行填充。已有物品的槽位会被补满，但新物品不会被放入空槽。",
+            "title": "囤积火盆"
+        }
+    ]
+}

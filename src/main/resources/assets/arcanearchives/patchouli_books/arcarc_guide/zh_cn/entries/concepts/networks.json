@@ -1,0 +1,19 @@
+{
+    "name": "网络",
+    "icon": "arcanearchives:manifest",
+    "category": "concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "你放置的每个奥术档案馆方块都会成为网络的一部分。网络中的每个方块都可以被特定物品和设备访问，并最终归属于你。网络的创建是自动的，而你永远只能属于一个网络。"
+        },
+        {
+            "type": "text",
+            "text": "$(bold)邀请函$()使用其他玩家给你的$(l:items/letter_invitation)邀请函$()，你可以与该玩家建立混合网络，共享彼此的物资。两个玩家网络中的一切内容都是互相可访问的。$(br2)$(item)注销函$()使用$(l:items/letter_resignation)注销函$()可以脱离混合网络。所有你放置的方块将回到你的个人网络中。"
+        },
+        {
+            "type": "text",
+            "text": "$(bold)清单$()$(l:items/manifest)清单$()显示你所属网络中所有容器的内容。$(br2)$(bold)驱逐令$()通过在铁砧上命名并使用$(l:items/writ_expulsion)驱逐令$()，你可以强制混合网络中的某位玩家离开网络。"
+        }
+    ]
+}

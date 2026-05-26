@@ -1,0 +1,67 @@
+{
+    "name": "辉耀箱",
+    "icon": "arcanearchives:radiant_chest",
+    "advancement": "arcanearchives:raw_quartz",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_chest",
+            "link_recipe": true,
+            "text": "辉耀箱是一种存储容器，单个方块即可拥有与原版双箱子相同数量的槽位。辉耀箱的每个槽位可存储多达256个物品，而非物品原本的堆叠上限。$(br2)在辉耀箱界面的底部，你可以为其命名以帮助整理存储。"
+        },
+        {
+            "type": "text",
+            "text": "辉耀箱也是一种光源。"
+        },
+        {
+            "type": "text",
+            "text": "只要箱子所在的区块已加载，存储在辉耀箱中的物品就会出现在$(l:items/manifest)清单$()中。",
+            "title": "清单"
+        },
+        {
+            "type": "text",
+            "text": "手持$(l:items/scepter_manipulation)操纵权杖$()对辉耀箱使用，同时另一只手持有物品，可以将该物品标记为箱子的标签。物品不会被消耗。$(br2)要清除标签，在主手持有操纵权杖且副手空无一物时，潜行并激活箱子。",
+            "title": "操纵权杖"
+        },
+        {
+            "type": "text",
+            "text": "对辉耀箱使用$(l:items/scepter_revelation)启示权杖$()会返回箱子的名称及其可用槽位数量。",
+            "title": "启示权杖"
+        },
+        {
+            "type": "text",
+            "text": "在辉耀箱界面的右下角，你可以选择$(l:blocks/brazier_hoarding)囤积火盆$()如何将物品路由到箱子。默认情况下，火盆可以将任何物品路由到箱子；如果勾选了复选框，则只有箱子里已经存在的物品才能被路由。",
+            "title": "囤积火盆"
+        },
+        {
+            "type": "text",
+            "text": "当用红石比较器检测时，辉耀箱会根据其满载程度（按总物品数而非槽位数）输出信号。",
+            "title": "红石比较器"
+        },
+        {
+            "type": "text",
+            "text": "辉耀箱可以通过潜行时对箱子使用一块$(l:items/raw_quartz)辉耀石英原石$()来合成。箱子内的任何物品都会被导入，如果作用于原版双箱子，两个箱子的物品都会被导入新的辉耀箱中。",
+            "title": "辉耀石英原石"
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:radiant_chest1",
+            "recipe2": "arcanearchives:radiant_chest2",
+            "text": "辉耀箱也可以通过常规方式合成。"
+        },
+        {
+            "type": "text",
+            "title": "背景故事",
+            "text": "$(italics)经过进一步检查，赋予我的那种发光的晶体物质似乎具有空间（还是时间？）扭曲特性。需要进一步研究；我有一个想法想要尝试。$(br2)我用这种晶体物质搭建了一个框架。放置在框架内的物品似乎只有在特定视角下才可见$(mdash)而且，如果我的仪器可信的话，它们确实存在。$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)我试图在框架上安装木板来封住内容物，但它们也同样受到了这种奇怪的空间扭曲影响。$(br2)用附魔了坚毅橡木防护的漆料加固木板，似乎可以防止木板受到这些扭曲的影响。$()$(br2)$(italics)看来我之前对坚毅橡木防护相较于注魔木材的看法是错误的。我想$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)我欠埃特蕾亚一杯酒。$()$(br2)$(bold)莎拉维达的研究日志$()$(br)...1665年，秋初"
+        }
+    ]
+}

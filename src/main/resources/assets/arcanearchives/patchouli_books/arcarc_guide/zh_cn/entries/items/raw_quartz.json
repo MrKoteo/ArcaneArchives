@@ -1,0 +1,38 @@
+{
+    "name": "辉耀石英原石",
+    "icon": "arcanearchives:raw_quartz",
+    "advancement": "arcanearchives:resonator",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:raw_quartz",
+            "link_recipe": true,
+            "text": "辉耀石英原石是一种未经精炼的魔法晶体，是奥术档案馆所有内容的基础。它主要用作合成材料。$(br2)$(item)箱子$()辉耀石英原石可用于将箱子转化为$(l:blocks/radiant_chest)辉耀箱$()。$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "辉耀石英原石可用于将工作台转化为$(l:blocks/radiant_crafting_table)辉耀工作台$()。",
+            "title": "工作台"
+        },
+        {
+            "type": "text",
+            "text": "辉耀石英原石可以通过对着另一个方块敲击来制作$(l:items/sliver_of_light)一线光$()。$(br2)$(item)星辉魔法光井$()当放置在有天空视野的光井中时，辉耀石英原石会随时间产生液态星辉。与海蓝宝石相比，其产出率显著较低，但更不易碎裂。",
+            "flag": "mod:astralsorcery",
+            "title": "一线光"
+        },
+        {
+            "type": "relations",
+            "entries": [
+                "blocks/radiant_resonator"
+            ],
+            "text": "辉耀石英原石会在$(l:blocks/radiant_resonator)辉耀谐振台$()上方随时间生成，形式为$(l:blocks/raw_quartz_cluster)石英原石簇$()。"
+        },
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:storage_raw_quartz",
+            "link_recipe": true,
+            "text": "辉耀石英原石也可以压缩成存储方块。辉耀石英原石块是一种光源。"
+        }
+    ]
+}

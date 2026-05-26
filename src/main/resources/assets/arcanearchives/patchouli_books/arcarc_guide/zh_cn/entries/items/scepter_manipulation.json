@@ -1,0 +1,18 @@
+{
+    "name": "操纵权杖",
+    "icon": "arcanearchives:scepter_manipulation",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:scepter_manipulation",
+            "link_recipe": true,
+            "text": "操纵权杖用于修改某些奥术档案馆方块的属性。$(br2)以下方块与操纵权杖有交互：$(br)$(l:blocks/radiant_chest)辉耀箱$()$(br)$(l:blocks/radiant_tank)辉耀储罐$()$(br)$(l:blocks/radiant_trove)辉耀宝库$()$(br)$(l:blocks/brazier_hoarding)囤积火盆$()"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:scepter_manipulation"
+        }
+    ]
+}

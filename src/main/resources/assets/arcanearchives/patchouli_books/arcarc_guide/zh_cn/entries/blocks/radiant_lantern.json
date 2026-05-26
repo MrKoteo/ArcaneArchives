@@ -1,0 +1,18 @@
+{
+    "name": "辉明灯",
+    "icon": "arcanearchives:radiant_lantern",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_lantern",
+            "link_recipe": true,
+            "text": "辉明灯是一种光源。它们可以以任意方向放置，并且即使附着的方块被移除也不会掉落。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:radiant_lantern"
+        }
+    ]
+}

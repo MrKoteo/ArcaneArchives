@@ -1,0 +1,20 @@
+{
+    "name": "星辉魔法兼容",
+    "icon": "astralsorcery:blockwell",
+    "category": "concepts",
+    "flag": "mod:astralsorcery",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "astralsorcery:blockwell",
+            "text": "$(br2)$(bold)辉耀石英原石$()$(l:items/raw_quartz)辉耀石英原石$()产生液态星辉。耐久但产出较低。$(br2)$(bold)刻面辉耀石英$()$(l:items/shaped_quartz)刻面辉耀石英$()也能产生液态星辉。比辉耀石英原石效率稍高。",
+            "title": "光井"
+        },
+        {
+            "type": "text",
+            "text": "$(l:gems/rivertear)河之泪$()以约每tick两桶的速度产生水。实际上是无限的，但由于技术限制存在极小的碎裂概率。$(br2)$(l:gems/mountaintear)山之泪$()以中等速度产生熔岩。实际上是无限的，但由于技术限制存在极小的碎裂概率。",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "河之泪"
+        }
+    ]
+}

@@ -12,8 +12,8 @@
 	"version": 1,
 	"show_progress": false,
 	"macros": {
-		"$(info)": "$(thing)$(bold)$(t:Important Detail)[!]$()",
-		"$(warning)": "$(#f00)$(bold)$(t:Warning)[!]$()",
-		"$(standing_stones)": "$(#aa0)$(bold)$(t:Standing Stones Required!)[!]$()"
+		"$(info)": "$(thing)$(bold)$(t:重要细节)[!]$()",
+		"$(warning)": "$(#f00)$(bold)$(t:警告)[!]$()",
+		"$(standing_stones)": "$(#aa0)$(bold)$(t:需要立石！)[!]$()"
 	}
 }

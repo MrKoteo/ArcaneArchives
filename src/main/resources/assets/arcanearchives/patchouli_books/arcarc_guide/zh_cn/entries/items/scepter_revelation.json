@@ -1,0 +1,41 @@
+{
+    "name": "启示权杖",
+    "icon": "arcanearchives:scepter_revelation",
+    "advancement": "arcanearchives:raw_quartz",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:scepter_revelation",
+            "link_recipe": true,
+            "text": "启示权杖用于在潜行时查询特定奥术档案馆方块的信息。$(br2)以下方块与启示权杖有交互："
+        },
+        {
+            "type": "text",
+            "text": "$(br2)$(l:blocks/monitoring_crystal)监视水晶$()$(br)$(l:blocks/radiant_chest)辉耀箱$()$(br)$(l:blocks/radiant_crafting_table)辉耀工作台$()$(br)$(l:blocks/radiant_resonator)辉耀谐振台$()$(br)$(l:blocks/radiant_tank)辉耀储罐$()$(br)$(l:blocks/radiant_trove)辉耀宝库$()$(br2)启示权杖也被用作其他权杖的合成材料。"
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:scepter_revelation",
+            "text": "启示权杖可以通过常规方式合成。"
+        },
+        {
+            "type": "text",
+            "title": "背景故事",
+            "text": "$(italics)一系列简单的占卜法术赋予这根权杖多种有用的信息探测能力。使用启示权杖收集实验数据是标准的大学程序。$(br2)如果你的实验可能导致人身伤害，你的启示权杖会被灌注一种危险感知法术，并开始剧烈震动。在这种情况下，$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)你大约有六十秒时间撤离现场。$(br2)永恒大学不对因粗心的实验室操作而造成的伤害负责。$()"
+        },
+        {
+            "type": "text",
+            "text": "$(br)...摘自发给永恒大学所有学徒的信函$(br2)$(italics)有趣。当这种晶体材料（我称之为辉耀石英）以某种棱镜形式附着时，启示权杖的信息探测能力似乎大大增强。$(br2)与我之前的仪器不同，使用这个新改进的$()",
+            "title": "学徒的全套装备"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)启示权杖对我的存储装置返回了一致的结果。$(br2)不幸的是，它似乎失去了预知警告能力。$()$(br2)$(bold)补遗$()$(br)...莎拉维达$(br)...1665年，夏初"
+        }
+    ]
+}

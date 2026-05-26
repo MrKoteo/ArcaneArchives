@@ -1,0 +1,23 @@
+{
+    "name": "辉耀之匙",
+    "icon": "arcanearchives:radiant_key",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_key",
+            "link_recipe": true,
+            "text": "当主手或副手持有时，你可以打开陷阱箱而不会触发红石信号。"
+        },
+        {
+            "type": "text",
+            "text": "当用于升级$(l:blocks/radiant_trove)辉耀宝库$()时，宝库所容纳的物品类型将被固定。即使宝库内部存储减少到0件物品，它也会为该类物品保留存储空间。",
+            "title": "辉耀宝库"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:radiant_key"
+        }
+    ]
+}

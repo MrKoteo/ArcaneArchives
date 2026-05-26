@@ -1,0 +1,19 @@
+{
+    "name": "枯之泪",
+    "icon": "arcanearchives:parchtear",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:parchtear",
+            "link_recipe": true,
+            "text": "枯之泪是一种奥术宝石，由黑色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以梨形切切割而成。$(br2)激活时，枯之泪会销毁半径1的立方体区域内的流体。如果潜行，则仅销毁单格流体。每销毁一格流体消耗一点充能。$(br2)流体被销毁后，其他流体在十秒内无法流入同一空间。$(br2)要为耗尽的枯之泪充能，将其放入$(l:items/devouring_charm)吞噬护符$()的流体销毁槽中。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:parchtear"
+        }
+    ]
+}

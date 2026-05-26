@@ -1,0 +1,27 @@
+{
+    "name": "辉耀之瓶",
+    "icon": "arcanearchives:radiant_amphora",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_amphora",
+            "link_recipe": true,
+            "text": "辉耀之瓶作为与特定$(l:blocks/radiant_tank)辉耀储罐$()的长距离连接工具。潜行时对着目标储罐使用双耳瓶可以将其绑定。双耳瓶会变色以表示连接已建立。"
+        },
+        {
+            "type": "text",
+            "text": "$(bold)填充模式：$()在填充模式下，拾取流体会直接将其存入绑定的辉耀储罐中。$(br2)$(bold)清空模式：$()在清空模式下，流体会从绑定的辉耀储罐中取出并放置在目标位置。$(br2)通过左键点击空气可以切换辉耀之瓶的当前模式。"
+        },
+        {
+            "type": "text",
+            "text": "将辉耀之瓶放入发射器中时，如果发射器前方的空间为空，它会尝试从绑定的储罐中放置流体。如果发射器前方有流体方块，双耳瓶则会尝试拾取流体并将其发送到绑定的储罐中。",
+            "title": "发射器"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:radiant_amphora"
+        }
+    ]
+}

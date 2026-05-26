@@ -1,0 +1,23 @@
+{
+  "name": "心灵纺锤",
+  "icon": "arcanearchives:mindspindle",
+  "category": "gems",
+  "flag": "arcanearchives:arsenal_enabled",
+  "advancement": "arcanearchives:gemcutters_table",
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "arcanearchives:mindspindle",
+      "link_recipe": true,
+      "text": "心灵纺锤是一种奥术宝石，由绿色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以潘佩尔切切割而成。$(br2)手持时，心灵纺锤会将经验球中的经验量放大50%。每放大一点经验消耗一点充能，可以在需要充能前"
+    },
+    {
+      "type": "text",
+      "text": "影响总计800点未放大的经验。$(br2)如果你手持心灵纺锤时接触到大量经验球，你可以瞬间吸收它们的精华，无需等待每个经验球依次被拾取。$(br2)要为耗尽的心灵纺锤充能，在物品栏中有一本书时激活宝石。书被消耗。"
+    },
+    {
+      "type": "gct_recipe",
+      "recipe": "arcanearchives:mindspindle"
+    }
+  ]
+}

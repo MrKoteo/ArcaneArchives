@@ -1,0 +1,28 @@
+{
+    "name": "秩序之石",
+    "icon": "arcanearchives:orderstone",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:orderstone",
+            "link_recipe": true,
+            "text": "秩序之石是一种奥术宝石，由粉色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以椭圆切切割而成。$(br2)激活时，秩序之石会将某些方块转化为更有序的状态。$(br2)要为耗尽的秩序之石充能，手持宝石收集经验球。"
+        },
+        {
+            "type": "text",
+            "title": "转化序列",
+            "text": "可以执行以下转化序列：$(br2)沙子 -> 粗泥 -> 泥土 -> 菌丝 -> 灰化土 -> 草方块$(br2)沙砾 -> 圆石 -> 石头$(br2)苔石 -> 圆石 -> 石头"
+        },
+        {
+            "type": "text",
+            "text": "裂石砖 -> 石砖 -> 錾制石砖$(br2)苔石砖 -> 石砖 -> 錾制石砖$(br2)损坏的铁砧 -> 轻微损坏的铁砧 -> 铁砧$(br2)熔炉 -> 点燃的熔炉"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:orderstone"
+        }
+    ]
+}

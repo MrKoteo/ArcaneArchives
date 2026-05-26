@@ -1,0 +1,15 @@
+{
+    "name": "药水核心兼容",
+    "icon": "minecraft:potion",
+    "category": "concepts",
+    "flag": "mod:potioncore",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "minecraft:potion",
+            "text": "$(bold)净化之微光$()$(l:gems/cleansegleam)净化之微光$()在使用时附加解毒效果。",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "效果"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "name": "吞噬护符",
+    "icon": "arcanearchives:devouring_charm",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:devouring_charm",
+            "link_recipe": true,
+            "text": "吞噬护符可以让你销毁物品或清空桶中的流体。吞噬护符也可作为可选的升级组件。"
+        },
+        {
+            "type": "text",
+            "text": "当用于升级$(l:blocks/radiant_tank)辉耀储罐$()时，超过储罐最大容量的多余流体会被销毁。",
+            "title": "辉耀储罐"
+        },
+        {
+            "type": "text",
+            "text": "当用于升级$(l:blocks/radiant_trove)辉耀宝库$()时，超过宝库最大容量的多余物品会被销毁。",
+            "title": "辉耀宝库"
+        },
+        {
+            "type": "text",
+            "text": "将$(l:gems/parchtear)枯之泪$()放入吞噬护符的流体销毁槽中可以恢复其充能。",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "枯之泪"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:devouring_charm"
+        },
+        {
+            "type": "text",
+            "title": "背景故事",
+            "text": "$(italics)永恒大学向所有学徒提供这些简单的护符。护符口内的传送门在许多方面类似于通向地狱的传送门，只是连接是单向的。$(br2)任何放入护符的东西都将永远消失，被送到某个地狱般的虚空中销毁。将剩余的食物残渣、实验废弃物、不再需要的生物$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)以及其他垃圾丢入你的护符，是标准的大学程序。$(br2)虽然你拿到的是供个人使用的手持版本，但更大的护符可以在获得导师许可后借用最长一天的时间。$(br2)如果你发现自己造成了特别巨大的混乱，一个直径约八十个方块的、内含吞噬护符的房间，可以在获得导师的书面许可$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)以及至少另外两位导师的许可后借用。$(br2)请注意分寸，至少尽量不要让事态发展到那一步。$()$(br2)$(bold)学徒的全套装备$()$(br)...发给永恒大学所有学徒的标准信函"
+        }
+    ]
+}

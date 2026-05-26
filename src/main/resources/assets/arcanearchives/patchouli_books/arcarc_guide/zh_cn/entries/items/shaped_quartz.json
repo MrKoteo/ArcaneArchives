@@ -1,0 +1,40 @@
+{
+	"name": "刻面辉耀石英",
+	"icon": "arcanearchives:shaped_quartz",
+    "advancement": "arcanearchives:gemcutters_table",
+	"category": "items",
+	"pages": [
+		{
+			"type": "spotlight",
+			"item": "arcanearchives:shaped_quartz",
+			"link_recipe": true,
+			"text": "刻面辉耀石英是经过切割和抛光的辉耀石英，适用于更高级的用途。它主要用作合成材料。"
+		},
+        {
+            "type": "text",
+            "text": "当放置在有天空视野的光井中时，刻面辉耀石英会随时间产生液态星辉。与海蓝宝石相比，其产出率显著较低，但更不易碎裂。刻面辉耀石英比$(l:items/raw_quartz)辉耀石英原石$()效率稍高。",
+            "flag": "mod:astralsorcery",
+            "title": "星辉魔法光井"
+        },
+		{
+			"type": "text",
+			"text": "刻面辉耀石英可以在$(l:blocks/gemcutters_table)宝石切割台$()上制作。"
+		},
+		{
+			"type": "spotlight",
+			"item": "arcanearchives:storage_shaped_quartz",
+			"link_recipe": true,
+			"text": "刻面辉耀石英也可以压缩成存储方块。刻面辉耀石英块是一种光源。"
+		},
+        {
+            "type": "text",
+            "text": "刻面辉耀石英块可用于升级$(l:blocks/radiant_tank)辉耀储罐$()。",
+            "title": "辉耀储罐"
+        },
+        {
+            "type": "text",
+            "text": "刻面辉耀石英块可用于升级$(l:blocks/radiant_trove)辉耀宝库$()。",
+            "title": "辉耀宝库"
+        }
+    ]
+}

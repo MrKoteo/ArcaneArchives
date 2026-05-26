@@ -1,0 +1,23 @@
+{
+    "name": "调换之微光",
+    "icon": "arcanearchives:switchgleam",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:switchgleam",
+            "link_recipe": true,
+            "text": "调换之微光是一种奥术宝石，由紫色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以阿斯切切割而成。$(br2)激活时，调换之微光会交换你和你所看向的实体的位置，消耗一点充能。$(br2)手持时，10格范围内的末影人"
+        },
+        {
+            "type": "text",
+            "text": "的传送尝试会被吸收。$(br2)要为耗尽的调换之微光充能，让它吸收末影人的传送。每次吸收传送尝试恢复三点充能。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:switchgleam"
+        }
+    ]
+}

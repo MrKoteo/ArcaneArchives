@@ -1,0 +1,45 @@
+{
+    "name": "囤积火盆",
+    "icon": "arcanearchives:brazier_of_hoarding",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:brazier_of_hoarding",
+            "link_recipe": true,
+            "text": "囤积火盆是一种整理设备，可作为物品的中转站，将物品存入你的$(l:concepts/networks)网络$()中。囤积火盆同时也是一种光源。$(br2)"
+        },
+        {
+            "type": "text",
+            "text": "任何对着囤积火盆使用或丢在其上的物品都会被传送到合适的存储设备中，首当其冲的是$(l:blocks/radiant_trove)辉耀宝库$()。如果网络中没有合适的辉耀宝库，物品将被放入$(l:blocks/radiant_chest)辉耀箱$()中，优先放入已有同类物品的箱子。$(br2)如果找不到任何存储设备，物品将从囤积火盆中被弹出。",
+            "title": "辉耀宝库"
+        },
+        {
+            "type": "text",
+            "text": "如果手持$(l:items/scepter_manipulation)操纵权杖$()右键点击火盆，你可以设置其搜索辉耀存储设备的最大半径，以及火盆是填充网络中所有已定位的设备，还是仅填充你个人放置的设备。你还可以启用一个选项来可视化插入区域的大小。$(br2)",
+            "title": "操纵权杖"
+        },
+        {
+            "type": "text",
+            "text": "如果对着囤积火盆右键点击潜影盒，其内容物将被存入火盆中。",
+            "title": "潜影盒"
+        },
+        {
+            "type": "text",
+            "text": "如果你将某物品设置为Quark收藏物品，则无法通过右键点击将其插入囤积火盆。",
+            "flag": "mod:quark",
+            "title": "Quark"
+        },
+        {
+            "type": "text",
+            "text": "囤积火盆可用作注魔稳定器。",
+            "flag": "mod:thaumcraft",
+            "title": "神秘时代"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:brazier_of_hoarding"
+        }
+    ]
+}

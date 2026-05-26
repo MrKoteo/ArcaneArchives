@@ -1,0 +1,27 @@
+{
+    "name": "咀嚼之石",
+    "icon": "arcanearchives:munchstone",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:munchstone",
+            "link_recipe": true,
+            "text": "咀嚼之石是一种奥术宝石，由黑色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以椭圆切切割而成。$(br2)激活时，咀嚼之石允许你消耗植物类方块来恢复饥饿值和饱和度。每恢复一点饥饿值和一点饱和度消耗充能。"
+        },
+        {
+            "type": "text",
+            "text": "请注意，咀嚼之石吞噬的是世界中的方块，而不是像常规食物那样让你吃掉物品栏中的东西。$(br2)值得注意的是，即使你的胃是满的，你也可以使用咀嚼之石。"
+        },
+        {
+            "type": "text",
+            "text": "要为耗尽的咀嚼之石充能，在物品栏中有骨粉时激活宝石。需要五个骨粉才能完全充满宝石，如果少于五个则仅部分充能。骨粉被消耗。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:munchstone"
+        }
+    ]
+}

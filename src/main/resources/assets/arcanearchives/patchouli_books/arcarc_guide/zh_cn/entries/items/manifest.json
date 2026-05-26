@@ -1,0 +1,41 @@
+{
+    "name": "清单",
+    "icon": "arcanearchives:manifest",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:manifest",
+            "link_recipe": true,
+            "text": "清单以单一列表的形式列出所有已加载的辉耀存储设备中存放的物品。$(br2)悬停在一个槽位上，你可以看到存储该物品的每个位置列表，包括辉耀箱的名称。点击槽位可以追踪这些物品的位置，从你当前的位置向目标容器绘制线条"
+        },
+        {
+            "type": "text",
+            "text": "（只要目标容器在同一维度中）。$(br2)激活已被追踪的容器会禁用追踪线，点击清单界面底部的$(ldquo)结束追踪$(rdquo)按钮也是一样。"
+        },
+        {
+            "type": "text",
+            "text": "你可以通过在搜索栏中输入文字来筛选清单显示的内容。右键点击搜索栏可清除当前搜索词。你也可以Shift点击搜索栏来复制当前的JEI搜索词。$(br2)$(bold)排序切换：$()第一个按钮切换按名称排序或按数量排序。$(br2)$(bold)顺序切换：$()第二个",
+            "title": "搜索栏："
+        },
+        {
+            "type": "text",
+            "text": "按钮切换升序或降序排列。"
+        },
+        {
+            "type": "text",
+            "text": "第三个按钮切换搜索栏是否与JEI搜索词同步。",
+            "title": "JEI同步："
+        },
+        {
+            "type": "text",
+            "text": "非辉耀存储容器中的物品可以通过在其容器上安装$(l:blocks/monitoring_crystal)监视水晶$()来添加到清单中。",
+            "title": "监视水晶"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:manifest"
+        }
+    ]
+}

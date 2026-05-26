@@ -1,0 +1,18 @@
+{
+	"name": "一线光",
+	"icon": "arcanearchives:quartz_sliver",
+    "advancement": "arcanearchives:raw_quartz",
+	"category": "items",
+	"pages": [
+		{
+			"type": "spotlight",
+			"item": "arcanearchives:quartz_sliver",
+			"link_recipe": true,
+			"text": "一线光是一种光源，是火把的替代品。与火把不同，它们可以放置在方块的下表面，并且不会被流体冲毁。"
+		},
+        {
+            "type": "text",
+            "text": "一线光可以通过将一块$(l:items/raw_quartz)辉耀石英原石$()对着另一个方块敲击来制作。每次敲击有40%的几率产生一个碎片，并有20%的几率产生一把碎片但消耗掉辉耀石英原石。"
+        }
+	]
+}

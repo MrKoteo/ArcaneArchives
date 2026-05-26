@@ -1,0 +1,23 @@
+{
+    "name": "谋杀之微光",
+    "icon": "arcanearchives:murdergleam",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:murdergleam",
+            "link_recipe": true,
+            "text": "谋杀之微光是一种奥术宝石，由黄色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以阿斯切切割而成。$(br2)切换开启时，谋杀之微光保证你的所有攻击都将造成暴击。每次攻击消耗一点充能（即使因攻击过快而未造成伤害的攻击）。"
+        },
+        {
+            "type": "text",
+            "text": "宝石可以通过左键点击切换开关。$(br2)当谋杀之微光的充能耗尽时，它会自动关闭。同样，当充能达到满值时，它会自动开启。$(br2)要为耗尽的谋杀之微光充能，在宝石关闭的状态下打出传统的跳跃暴击。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:murdergleam"
+        }
+    ]
+}

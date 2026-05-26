@@ -1,0 +1,35 @@
+{
+    "name": "邀请函",
+    "icon": "arcanearchives:letter_invitation",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:letter_invitation",
+            "link_recipe": true,
+            "text": "如果其他玩家使用了你制作的邀请函，他们将被添加到你的$(l:concepts/networks)网络$()中。$(br2)$(item)清单$()查看$(l:items/manifest)清单$()时，网络中所有玩家放置的辉耀存储设备都可见。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:letter_invitation"
+        },
+        {
+            "type": "text",
+            "title": "背景故事",
+            "text": "$(italics)旅法师雅兰：$(br2)预兆占卜师们认为，一个名叫辉草甸的村庄中住着一名具有魔法倾向的儿童。受招募部委托，命你前去接回该儿童，并将其带回永恒大学进行评估。$(br2)根据他们的占卜，该儿童已经开始施展超出$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)乡民通常使用的粗浅巫术范畴的魔法。试着说服该儿童向你展示其能力。不管其法术多么原始，都要装出感兴趣的样子。$(br2)如果你能说服该儿童及其父母自愿将其交给我们，你的任务将最为轻松。记得语速要慢、用词要简单。如果辉草甸的乡民表现出抗拒交出孩子的态度，可以提供一些小型魔法$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)增强来改善他们的生活作为交换——比如一个铁傀儡或一个净水护符。$(br2)如果你无法说服村庄自愿放手，就抹除该儿童在村民记忆中的存在，然后强行带走。不必担心抵抗或对其造成心理创伤，因为它的记忆将被清除并替换为更合适的内容。此法应作为最后手段，因为其带来的额外工作量将严重损害你在$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)招募部的地位。$(br2)沐浴在你启迪的光芒中，永远行走在智慧的道路上。$()$(br2)$(bold)招募部官方招募令$()$(br)...1627年，冬末"
+        }
+    ]
+}

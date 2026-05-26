@@ -1,0 +1,36 @@
+{
+    "name": "注销函",
+    "icon": "arcanearchives:letter_resignation",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:letter_resignation",
+            "link_recipe": true,
+            "text": "注销函可用于离开通过$(l:items/letter_invitation)邀请函$()创建的混合网络。"
+        },
+        {
+            "type": "text",
+            "text": "当你离开混合网络时，你放置的所有辉耀存储设备将从网络中移除，你所离开网络的成员将不再能在$(l:items/manifest)清单$()中看到这些设备。",
+            "title": "清单"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:letter_resignation"
+        },
+        {
+            "type": "text",
+            "title": "背景故事",
+            "text": "$(italics)致永恒大学我尊敬的同事们：$(br2)我整个启迪生涯都在不懈地努力，将启迪之光带给所有智政院认为值得分享其光芒的人。我努力成为所有人的启迪灯塔，但我再也无法对这所大学所容忍的谬误视而不见了。$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)伟大建筑师们所分享的启迪，并非为粗俗的乡民准备的。启迪是为纯净者而设的；我们不能继续用那些永远无法超越旅法师身份的粗陋新手来稀释我们的队伍。$(br2)由于这种做法的增加，尽管我多次抗议，我不再认为启迪是大师议会的最高目标。$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)因此，我决定立即辞去在这个曾经伟大的团体中的职务。$()$(br2)$(bold)拉舍隆大师的官方注销函$()$(br)...1634年，春初"
+        }
+    ]
+}

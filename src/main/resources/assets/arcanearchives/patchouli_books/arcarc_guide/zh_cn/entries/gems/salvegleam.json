@@ -1,0 +1,23 @@
+{
+    "name": "抚慰之微光",
+    "icon": "arcanearchives:salvegleam",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:salvegleam",
+            "link_recipe": true,
+            "text": "抚慰之微光是一种奥术宝石，由粉色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以阿斯切切割而成。$(br2)手持并切换开启时，如果你受伤，宝石大约每秒会为你恢复半颗心。每半颗心消耗一点充能。"
+        },
+        {
+            "type": "text",
+            "text": "要为耗尽的抚慰之微光充能，手持宝石屠杀一只被动动物。每杀一只恢复相当于该动物最大生命值一半的充能点数。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:salvegleam"
+        }
+    ]
+}

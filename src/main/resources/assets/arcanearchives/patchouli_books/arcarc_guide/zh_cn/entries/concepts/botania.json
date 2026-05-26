@@ -1,0 +1,15 @@
+{
+    "name": "植物魔法兼容",
+    "icon": "botania:altar",
+    "category": "concepts",
+    "flag": "mod:botania",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "botania:altar",
+            "text": "$(br2)$(bold)河之泪$()如果你的物品栏中某处有$(l:gems/rivertear)河之泪$()（或插在$(l:items/gem_socket)宝石槽$()中），右键点击花瓣炼药锅会将其注满水。",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "花瓣炼药锅"
+        }
+    ]
+}

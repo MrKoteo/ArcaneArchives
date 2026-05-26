@@ -1,0 +1,23 @@
+{
+    "name": "风暴之道",
+    "icon": "arcanearchives:stormway",
+    "category": "gems",
+    "flag": "arcanearchives:arsenal_enabled",
+    "advancement": "arcanearchives:gemcutters_table",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:stormway",
+            "link_recipe": true,
+            "text": "风暴之道是一种奥术宝石，由黄色光谱的$(l:items/shaped_quartz)刻面辉耀石英$()以三角切切割而成。$(br2)激活时，风暴之道会在30格范围内召唤一道闪电，消耗一点充能。$(br2)如果你在手持风暴之道时被闪电击中，你会"
+        },
+        {
+            "type": "text",
+            "text": "短时间内获得速度、夜视和抗性提升。当宝石赋予这些效果时，消耗六点充能。$(br2)切换开启时，如果你被远程攻击击中，闪电会在攻击者的位置落下。该闪电比普通闪电危险得多，每次反击消耗一点充能。$(br2)要为耗尽的风暴之道充能，在暴风雨天气中手持或将其丢到室外。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:stormway"
+        }
+    ]
+}

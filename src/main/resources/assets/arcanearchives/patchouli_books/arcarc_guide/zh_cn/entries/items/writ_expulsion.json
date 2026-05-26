@@ -1,0 +1,36 @@
+{
+    "name": "驱逐令",
+    "icon": "arcanearchives:writ_expulsion",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "items",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:writ_expulsion",
+            "link_recipe": true,
+            "text": "驱逐令可用于强制将玩家从$(l:concepts/networks)混合网络$()中移除。$(br2)$(item)铁砧$()在铁砧上将驱逐令命名为要踢出网络的玩家名称后，使用它以完成驱逐。"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:writ_expulsion"
+        },
+        {
+            "type": "text",
+            "title": "背景故事",
+            "text": "$(italics)莎拉维达大师，情况已经变得显而易见：你不再拥有作为永恒大学大师所需的客观判断力。$(br2)你完全沉迷于你所声称存在的这种材料。然而你反复未能拿出任何实际证据来证明其存在，除了一些发光的碎片。我要指出，这种效果$()",
+            "flag": "mod:thaumcraft"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)用一个简单的咒语就能实现。$(br2)本议会的意见是，你的心智已被你的神秘学研究侵蚀。你看到不存在之物，是因为扭曲已扭曲了你的心智。$(br2)考虑到你的年龄，本议会的意见是你的心智正在退化为老年痴呆。你所说的那些五边形和六边形纯属无稽之谈——那是$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)一个衰弱的老糊涂无法接受某个理论可能是错误的白日梦。$(br2)四方议会多数已作出裁决。你已偏离智慧之路，你的启迪权利已经失效。你被逐出永恒大学，不再享有大师头衔。你不得再从事你的技艺，也不得踏入大学，违者处死。$()"
+        },
+        {
+            "type": "text",
+            "text": "$(bold)莎拉维达纪律听证会的最终声明$()$(br)...绿焰之库斯特，研究四执政官$(br)...1670年，春盛"
+        }
+    ]
+}

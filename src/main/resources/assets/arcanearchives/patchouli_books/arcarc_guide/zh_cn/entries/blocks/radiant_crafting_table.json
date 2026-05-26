@@ -1,0 +1,33 @@
+{
+    "name": "辉耀工作台",
+    "icon": "arcanearchives:radiant_crafting_table",
+    "advancement": "arcanearchives:raw_quartz",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:radiant_crafting_table",
+            "link_recipe": true,
+            "text": "辉耀工作台的功能与传统工作台相同，但离开界面时物品不会被丢出。辉耀工作台也是一种光源。$(br2)合成物品后，你可以点击界面右侧的某个槽位来保存配方。如果你的物品栏中有足够的"
+        },
+        {
+            "type": "text",
+            "text": "材料，点击保存了配方的槽位即可直接合成物品，无需手动摆放材料。Shift点击可以清除槽位中的配方。"
+        },
+        {
+            "type": "text",
+            "text": "对辉耀工作台使用$(l:items/scepter_revelation)启示权杖$()会返回合成格中当前有哪些物品。",
+            "title": "启示权杖"
+        },
+        {
+            "type": "text",
+            "text": "辉耀工作台可以通过潜行时对原版工作台使用一块$(l:items/raw_quartz)辉耀石英原石$()来合成。",
+            "title": "辉耀石英原石"
+        },
+        {
+            "type": "crafting",
+            "recipe": "arcanearchives:radiant_crafting_table",
+            "text": "辉耀工作台也可以通过常规方式合成。"
+        }
+    ]
+}

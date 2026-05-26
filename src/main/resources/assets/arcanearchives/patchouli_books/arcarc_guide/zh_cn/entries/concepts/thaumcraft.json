@@ -1,0 +1,26 @@
+{
+    "name": "神秘时代兼容",
+    "icon": "thaumcraft:thaumonomicon",
+    "category": "concepts",
+    "flag": "mod:thaumcraft",
+    "pages": [
+        {
+            "type": "text",
+            "title": "要素",
+            "text": "所有奥术档案馆的物品和方块都注册了神秘时代要素。值得注意的是，辉耀石英是一种源动之力的来源。"
+        },
+        {
+            "type": "spotlight",
+            "item": "thaumcraft:crucible",
+            "text": "$(br2)$(bold)河之泪$()如果你的物品栏中某处有$(l:gems/rivertear)河之泪$()（或插在$(l:items/gem_socket)宝石槽$()中），右键点击炼药锅会将其注满水。",
+            "flag": "arcanearchives:arsenal_enabled",
+            "title": "炼药锅"
+        },
+        {
+            "type": "spotlight",
+            "item": "thaumcraft:infusion_matrix",
+            "text": "$(br2)$(bold)石英原石簇$()$(l:blocks/raw_quartz_cluster)石英原石簇$()可用作注魔稳定器。$(br2)$(item)囤积火盆$()$(l:blocks/brazier_hoarding)囤积火盆$()也可用作注魔稳定器。",
+            "title": "注魔"
+        }
+    ]
+}

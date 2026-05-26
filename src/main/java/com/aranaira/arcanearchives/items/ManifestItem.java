@@ -58,16 +58,14 @@ public class ManifestItem extends ItemTemplate {
 	@SideOnly(Side.CLIENT)
 	public void addInformation (ItemStack stack, World worldIn, List<String> tooltip, ITooltipFlag flagIn) {
 		tooltip.add(TextFormatting.GOLD + I18n.format("arcanearchives.tooltip.item.manifest"));
-		String additional = "";
-		if (Keybinds.manifestKey.getKeyCode() != 0) {
-			additional = " or " + Keybinds.manifestKey.getDisplayName();
+		boolean hasKey = Keybinds.manifestKey.getKeyCode() != 0;
+		String keyName = hasKey ? Keybinds.manifestKey.getDisplayName() : null;
+		if (hasKey) {
+			tooltip.add(TextFormatting.GOLD + I18n.format("arcanearchives.tooltip.item.manifest.open.key", keyName));
+			tooltip.add(TextFormatting.GOLD + I18n.format("arcanearchives.tooltip.item.manifest.clear.key", keyName));
+		} else {
+			tooltip.add(TextFormatting.GOLD + I18n.format("arcanearchives.tooltip.item.manifest.open"));
+			tooltip.add(TextFormatting.GOLD + I18n.format("arcanearchives.tooltip.item.manifest.clear"));
 		}
-		tooltip.add(TextFormatting.GOLD + "" + TextFormatting.BOLD + "Right-Click" + additional + TextFormatting.RESET + TextFormatting.GOLD + " to open the manifest.");
-		if (Keybinds.manifestKey.getKeyCode() != 0) {
-			additional = " or Sneak-" + Keybinds.manifestKey.getDisplayName();
-		}
-		tooltip.add(TextFormatting.GOLD + "" + TextFormatting.BOLD + "Sneak-Right-Click" + additional + TextFormatting.RESET + TextFormatting.GOLD + " to clear inventory tracking.");
-		if (Keybinds.manifestKey.getKeyCode() == 0) {
-		}
-	}
+    }
 }

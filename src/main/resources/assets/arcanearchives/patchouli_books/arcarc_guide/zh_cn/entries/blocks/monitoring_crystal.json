@@ -1,0 +1,37 @@
+{
+    "name": "监视水晶",
+    "icon": "arcanearchives:monitoring_crystal",
+    "advancement": "arcanearchives:gemcutters_table",
+    "category": "blocks",
+    "pages": [
+        {
+            "type": "spotlight",
+            "item": "arcanearchives:monitoring_crystal",
+            "link_recipe": true,
+            "text": "监视水晶可用于将辉耀存储容器的追踪能力附加到非奥术档案馆的容器上（如原版箱子）。它也是一种光源。"
+        },
+        {
+            "type": "text",
+            "text": "安装了监视水晶的容器中的物品可以通过$(l:items/manifest)清单$()查看和追踪，就像它们是辉耀存储容器一样。你不能将监视水晶安装在$(l:blocks/radiant_chest)辉耀箱$()、$(l:blocks/radiant_tank)辉耀储罐$()或$(l:blocks/radiant_trove)辉耀宝库$()上；这些设备会自动出现在你的清单中。",
+            "title": "清单"
+        },
+        {
+            "type": "text",
+            "text": "对监视水晶使用$(l:items/scepter_revelation)启示权杖$()会返回监视水晶所指向的方向。",
+            "title": "启示权杖"
+        },
+        {
+            "type": "gct_recipe",
+            "recipe": "arcanearchives:monitoring_crystal"
+        },
+        {
+            "type": "text",
+            "title": "背景故事",
+            "text": "$(bold)$(italics)烙印信条$()$(br2)$(italics)你所展现的承诺和卓越使你获得了自称永恒大学大师的权利。从此刻起，你获得新生，摆脱了学徒身份的枷锁。$(br2)你的额头将刻上监控之烙印，我们将以此注视你。观察带来诚实，$()"
+        },
+        {
+            "type": "text",
+            "text": "$(italics)诚实带来节制。$(br2)启迪是强者的权利，而节制之外无力量可言。$(br2)信任四方议会的判断，智政院将信任你的成果。$(br2)沐浴在你启迪的光芒中，大师，永远行走在智慧的道路上。$()"
+        }
+    ]
+}
