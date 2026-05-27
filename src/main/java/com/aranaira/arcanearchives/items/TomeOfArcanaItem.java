@@ -16,6 +16,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import vazkii.patchouli.api.PatchouliAPI;
 
+import javax.annotation.Nullable;
 import java.util.List;
 
 public class TomeOfArcanaItem extends ItemTemplate {
@@ -25,6 +26,12 @@ public class TomeOfArcanaItem extends ItemTemplate {
 	public TomeOfArcanaItem () {
 		super(NAME);
 		setMaxStackSize(1);
+	}
+
+	@Override
+	@Nullable
+	public net.minecraft.creativetab.CreativeTabs getCreativeTab () {
+		return null;
 	}
 
 	@Override
