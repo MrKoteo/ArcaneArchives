@@ -34,6 +34,13 @@
                     }
                 }
         }],
+            "has_manifest": {
+            "true": {},
+            "false": {
+                "model": "arcanearchives:lectern_manifest_empty.obj",
+                "custom": { "flip-v": true }
+            }
+        },
         "accessor": {
             "true": {
                 "model": "cube_all",

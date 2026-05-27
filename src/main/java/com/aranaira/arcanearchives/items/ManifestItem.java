@@ -2,18 +2,22 @@ package com.aranaira.arcanearchives.items;
 
 import com.aranaira.arcanearchives.AAGuiHandler;
 import com.aranaira.arcanearchives.ArcaneArchives;
+import com.aranaira.arcanearchives.blocks.LecternManifest;
 import com.aranaira.arcanearchives.client.Keybinds;
 import com.aranaira.arcanearchives.data.types.ClientNetwork;
 import com.aranaira.arcanearchives.data.DataHelper;
 import com.aranaira.arcanearchives.items.templates.ItemTemplate;
 import com.aranaira.arcanearchives.util.ManifestTrackingUtils;
+import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
+import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
@@ -29,6 +33,37 @@ public class ManifestItem extends ItemTemplate {
 	public ManifestItem () {
 		super(NAME);
 		setMaxStackSize(1);
+	}
+
+	@Override
+	public EnumActionResult onItemUseFirst (EntityPlayer player, World worldIn, BlockPos pos, EnumFacing side, float hitX, float hitY, float hitZ, EnumHand hand) {
+		if (!player.isSneaking()) {
+			return EnumActionResult.PASS;
+		}
+
+		IBlockState state = worldIn.getBlockState(pos);
+		if (!(state.getBlock() instanceof LecternManifest)) {
+			return EnumActionResult.PASS;
+		}
+
+		if (state.getValue(LecternManifest.ACCESSOR)) {
+			pos = pos.down();
+			state = worldIn.getBlockState(pos);
+		}
+
+		if (state.getValue(LecternManifest.HAS_MANIFEST)) {
+			return EnumActionResult.PASS;
+		}
+
+        player.getHeldItem(hand).shrink(1);
+
+		if (worldIn.isRemote) {
+			return EnumActionResult.SUCCESS;
+		}
+
+		worldIn.setBlockState(pos, state.withProperty(LecternManifest.HAS_MANIFEST, true));
+		player.inventoryContainer.detectAndSendChanges();
+		return EnumActionResult.SUCCESS;
 	}
 
 	@Override
