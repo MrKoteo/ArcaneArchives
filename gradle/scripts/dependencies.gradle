@@ -50,6 +50,8 @@ dependencies {
 
     modImplementation 'maven.modrinth:fugue:0.23.4'
 
+    
+    modImplementation 'curse.maven:just-enough-characters-250702:7424367'
     modImplementation 'curse.maven:had-enough-characters-640802:4874506'
     
     // Example - Dependency descriptor:

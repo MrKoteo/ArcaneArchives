@@ -4,6 +4,7 @@ import com.aranaira.arcanearchives.inventory.ContainerManifest;
 import com.aranaira.arcanearchives.types.ISerializeByteBuf;
 import com.aranaira.arcanearchives.util.ItemUtils;
 import com.aranaira.arcanearchives.util.ManifestUtils.CollatedEntry;
+import com.aranaira.arcanearchives.util.PinyinHelper;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentHelper;
@@ -17,10 +18,12 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.function.BiPredicate;
 import java.util.stream.Collectors;
 
 public class ManifestList extends ReferenceList<CollatedEntry> implements ISerializeByteBuf<ManifestList> {
 	private static Map<String, ModContainer> modList = null;
+	private static BiPredicate<String, String> pinyinMatcher = null;
 	private ContainerManifest listener = null;
 	private String filterText;
 	private ItemStack searchItem;
@@ -76,6 +79,17 @@ public class ManifestList extends ReferenceList<CollatedEntry> implements ISeria
 		return name.replace(" ", "").toLowerCase();
 	}
 
+	private static boolean matchesPinyin (String text, String filter) {
+		if (pinyinMatcher == null) {
+			if (Loader.isModLoaded("hecharacters")) {
+				pinyinMatcher = PinyinHelper.getMatcher();
+			} else {
+				pinyinMatcher = (t, f) -> false;
+			}
+		}
+		return pinyinMatcher.test(text, filter);
+	}
+
 	public ManifestList filtered () {
 		if (filterText == null && searchItem == null) {
 			return this;
@@ -113,11 +127,14 @@ public class ManifestList extends ReferenceList<CollatedEntry> implements ISeria
 				if (display.contains(finalFilter)) {
 					return true;
 				}
+				if (matchesPinyin(stack.getDisplayName(), finalFilter)) {
+					return true;
+				}
 				String registry = stack.getItem().getRegistryName().getPath().toLowerCase();
 				if (registry.contains(finalFilter)) {
 					return true;
 				}
-			} else if (modFilter) {
+			} else {
 				String modName = getAdustedModName(stack);
 				if (modName.contains(finalFilter)) {
 					return true;
