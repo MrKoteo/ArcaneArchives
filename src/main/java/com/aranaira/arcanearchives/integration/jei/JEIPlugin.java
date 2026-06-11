@@ -77,11 +77,11 @@ public class JEIPlugin implements IModPlugin {
 			itemRegistry.removeIngredientsAtRuntime(VanillaTypes.ITEM, Collections.singletonList(new ItemStack(ItemRegistry.GBOOK_ARSENAL_CONDITION)));
 		}
 
-		NonNullList<ItemStack> ignores = NonNullList.create();
+		//NonNullList<ItemStack> ignores = NonNullList.create();
 		//ItemRegistry.CHROMATIC_POWDER.getSubItems(CreativeTabs.SEARCH, ignores);
 		//ignores.add(new ItemStack(ItemRegistry.CHROMATIC_POWDER));
 		//ignores.add(new ItemStack(ItemRegistry.RAINBOW_CHROMATIC_POWDER));
 
-		itemRegistry.removeIngredientsAtRuntime(VanillaTypes.ITEM, ignores);
+		//itemRegistry.removeIngredientsAtRuntime(VanillaTypes.ITEM, ignores);
 	}
 }
